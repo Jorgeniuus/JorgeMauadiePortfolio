@@ -1,0 +1,116 @@
+/*=====>>> MAIN STYLE <<<=====*/
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;/*ficam todos dentro na mesma borda da caixa*/
+    font: normal;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+/* div#interfacemenu{
+    background-color: rgb(42, 4, 180);
+    width: 400px;
+    height: 900PX;
+    margin: 0 auto;
+    color: white;
+    margin-left: 0.1%;
+} */
+.flex{
+    display: flex;
+}
+/*=====>>> HEADER <<<=====*/
+header{
+    padding: 2% 5%;
+}
+div#projectsmenu{
+    background-color: rgb(38, 36, 44);
+    width: 150px;
+    height: 900PX;
+    margin: 0 auto;
+    color: white;
+    margin-left: 0.1%;
+    margin-right: 0.5%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+header nav div#projectsmenu ul{
+    list-style-type: none;
+    margin-top: 20%;
+}
+header nav div#projectsmenu ul li{
+    color: white;
+    padding: 15% 15%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav div#projectsmenu ul li:hover{
+    color: black;
+    transform: scale(1.25);
+    padding: 15% 35%;
+    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(169, 145, 255); */
+}
+h1#titleprojects{
+    text-align: center;
+    padding-top: 10%;
+}
+hr{
+    color: black;
+} 
+/*=====>>> CONTENT <<<=====*/
+main section div#content{
+    /* rgb(189, 189, 189); */
+    background-color: rgb(231, 231, 231);
+    min-width: 300px;
+    max-width: 800px;
+    height: 900PX;
+}
+h1#contenttext{
+    width: 100%;
+}
+p#contenttext{
+    width: 100%;
+}
+/*=====>>> ABOUT ME <<<======*/
+#myname{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 250%;
+}
+#myname span{
+    color: rgb(255, 255, 255);
+}
+div#about{
+    background-color: rgb(38, 36, 44);
+    width: 400px;
+    height: 900PX;
+    margin: 0 auto;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 0.1%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#profilephoto{
+    width: 400px;
+}
+header nav div#about ul li{
+    color: white;
+    padding: 5% 15%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav div#about ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5% 6%;
+} 
+header nav div#about ul li:hover{
+    color: black;
+    transform: scale(1.25);
+}
