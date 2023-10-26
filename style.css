@@ -15,7 +15,7 @@ body{
 /*=====>>> HEADER <<<=====*/
 header{
     padding-top: 100px;
-    min-width: 800px;
+    min-width: 516px;
     max-width: 1540px;
 }
 div#projectsmenu{
@@ -56,15 +56,10 @@ hr{
 main section div#content{
     /* rgb(189, 189, 189); */
     background-color: rgb(231, 231, 231);
-    min-width: 300px;
-    max-width: 1280px;
+    /* width: 1280px; */
+    /* min-width: 480px; */
+    /*max-width: 1280px; */
     height: 1000PX;
-}
-h1#contenttext{
-    width: 100%;
-}
-p#contenttext{
-    width: 100%;
 }
 .rolagem{
     overflow: auto;
