@@ -69,8 +69,7 @@ main section div#content{
     text-transform: uppercase;
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 250%;
-    width: 100%;
+    font-size: 200%; 
 }
 /* #myname span{
     color: rgb(255, 255, 255);
@@ -85,7 +84,7 @@ div#about{
     border-bottom-right-radius: 30px;
 }
 #profilephoto{
-    width: 350px;
+    width: 300px;
 }
 header nav div#about ul li{
     color: white;
