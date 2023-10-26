@@ -1,0 +1,25 @@
+iframe{
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    width: 97.5%;
+    height: 50%; 
+}
+iframe#shipdestroyer{
+    height: 189.5%;
+}
+iframe#abeastoutside{
+    height: 205.5%;
+}
+iframe#fpsmultiplayer{
+    height: 122.5%;
+}
+hr{
+    border: 0;
+    height: 5px;
+    background: #000000;
+}
+.line hr{
+    border: 0;
+    height: 3px;
+    background: #ffffff;
+}

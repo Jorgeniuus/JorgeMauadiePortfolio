@@ -16,13 +16,27 @@ SOBRE LATERAL DIREITO:
 CONTEUDO:
 - jogos
 - nome
-- link
+- link = fazer o link ser no nome do jogo
 - fotos
 - video
 - resumo explicativo
 
+TAREFA:
+- Por fotos de amostraa dentro de um coteiner e deixa-las menor,
+    quando passar o mouse por cima elas crescerem.
 
+======================================================================================================
+CONTEUDOS DO A BEEAST OUTSIDE:
+- link game: https://gamedevbyjorge.itch.io/a-beast-outside
+- link youtube: https://youtu.be/-j-JZupnu0U
+- link youtube iframe: <iframe width="347" height="195" src="https://www.youtube.com/embed/-j-JZupnu0U" title="A Beast Outside - Trailer!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+- descrição En: A Beast Outside is a game was done for a Game Jam, with theme of game Horror and Feral Beast. It was my first Game Jam Game. 
+- descrição Pt: A Beast Outside é um jogo que foi feito para uma Game Jam, cujo o tema era Horror and Feral Beast. Esse foi meu primeiro jogo para uma Game Jam!   
 
+CONTEUDOS DO FPS MULTIPLAYER:
+- link game: https://gamedevbyjorge.itch.io/fps-multiplayer
+- descrição En: A shooter multiplayer game made with Photon Pun for the purpose of learning the tool!
+- descrição Pt: Um jogo multijogador de tiro feito com Photon Pun com o propósito de aprender a ferramenta!
 
 
 
@@ -41,7 +55,5 @@ CONTEUDO:
         </div>
         <!--menu lateral direito-->
     </section> 
-
-
 
 */
