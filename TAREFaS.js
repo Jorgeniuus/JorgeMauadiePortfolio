@@ -38,8 +38,11 @@ CONTEUDOS DO FPS MULTIPLAYER:
 - descrição En: A shooter multiplayer game made with Photon Pun for the purpose of learning the tool!
 - descrição Pt: Um jogo multijogador de tiro feito com Photon Pun com o propósito de aprender a ferramenta!
 
+ABOUT ME:
+- GitHub: https://github.com/Jorgeniuus
+- Linkedin: https://www.linkedin.com/in/jorgemauadie/
 
-
+======================================================================================================
     <section class="flex" id="about"><!--BARRA LATERAL ESQUERDO SOBRE-->
         <div id="interfaceaboutme">
             <nav>
