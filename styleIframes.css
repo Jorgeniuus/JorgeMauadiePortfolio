@@ -23,3 +23,9 @@ hr{
     height: 3px;
     background: #ffffff;
 }
+h1#contenttext{
+    color: #00000000;
+}
+p#contenttext{
+    color: #00000000;
+}

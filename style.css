@@ -17,6 +17,7 @@ header{
     padding-top: 100px;
     min-width: 516px;
     max-width: 1540px;
+    height: 720px;
 }
 div#projectsmenu{
     background-color: rgb(38, 36, 44);
@@ -54,11 +55,7 @@ hr{
 } 
 /*=====>>> CONTENT <<<=====*/
 main section div#content{
-    /* rgb(189, 189, 189); */
     background-color: rgb(231, 231, 231);
-    /* width: 1280px; */
-    /* min-width: 480px; */
-    /*max-width: 1280px; */
     height: 720PX;
 }
 .rolagem{
