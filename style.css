@@ -2,7 +2,7 @@
 *{
     margin: auto;
     padding: 0;
-    box-sizing: border-box;/*ficam todos dentro na mesma borda da caixa*/
+    box-sizing: border-box;
     font: normal;
 }
 body{
@@ -71,9 +71,6 @@ main section div#content{
     padding-bottom: 5%;
     font-size: 200%; 
 }
-/* #myname span{
-    color: rgb(255, 255, 255);
-} */
 div#about{
     background-color: rgb(38, 36, 44);
     width: 400px;
