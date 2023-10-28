@@ -9,8 +9,26 @@ body{
     background-color: rgb(0, 0, 0);
     height: 100vh;
 }
-.flex{
-    display: flex;
+@media screen and (min-width: 1024px){
+    .flex{
+        display: flex;
+    }
+}
+@media screen and (max-width: 375px){
+    .flex{
+        display: flex;  
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+    }
+    #projectsmenu{
+        order: 2;
+    }
+    main{
+        order: 1;
+    }
+    #about{
+        order: 3;
+    }
 }
 /*=====>>> HEADER <<<=====*/
 header{
@@ -19,82 +37,170 @@ header{
     max-width: 1540px;
     height: 720px;
 }
-div#projectsmenu{
-    background-color: rgb(38, 36, 44);
-    min-width: 150px;
-    width: 150px;
-    height: 720PX;
-    color: white;
-    margin-right: 0.5%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-header nav div#projectsmenu ul{
-    list-style-type: none;
-    margin-top: 20%;
-}
-header nav div#projectsmenu ul li{
-    color: white;
-    padding: 15% 15%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-header nav div#projectsmenu ul li:hover{
-    color: black;
-    transform: scale(1.25);
-    padding: 15% 35%;
-    background-color: rgb(231, 231, 231);
-    /* background-color: rgb(169, 145, 255); */
-}
-h1#titleprojects{
-    text-align: center;
-    padding-top: 10%;
-}
-hr{
-    color: black;
+/*responsive style*/
+@media screen and (min-width: 1024px){
+    h1#titleprojects{
+        text-align: center;
+        padding-top: 10%;
+    }
+    div#projectsmenu{
+        background-color: rgb(38, 36, 44);
+        min-width: 90px;
+        width: 150px;
+        height: 720PX;
+        color: rgb(255, 123, 0);
+        margin-right: 0.5%;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    header nav div#projectsmenu ul{
+        list-style-type: none;
+        margin-top: 20%;
+    }
+    header nav div#projectsmenu ul li{
+        color: white;
+        padding: 15% 15%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    header nav div#projectsmenu ul li:hover{
+        color: black;
+        transform: scale(1.25);
+        padding: 15% 35%;
+        background-color: rgb(231, 231, 231);
+    }
+} 
+@media screen and (max-width: 375px){
+    h1#titleprojects{
+        margin-left: 5px;
+        padding-top: 6%;
+    }
+    div#projectsmenu{
+        background-color: rgb(38, 36, 44);
+        width: 375px;
+        height: 70PX;
+        padding-bottom: 50px;
+        color: rgb(255, 123, 0);
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        display: inline-flex;
+    }
+    header nav div#projectsmenu ul{
+        list-style-type: none;
+        margin-top: 6%;
+    }
+    header nav div#projectsmenu ul li{
+        margin-right: 10px;
+        color: rgb(231, 231, 231);
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 12px;
+        display: inline-flex;
+    }
+    header nav div#projectsmenu ul li:hover{
+        color: black;
+        transform: scale(1.25);
+        background-color: rgb(231, 231, 231);
+    }
 } 
 /*=====>>> CONTENT <<<=====*/
-main section div#content{
-    background-color: rgb(231, 231, 231);
-    height: 720PX;
-}
 .rolagem{
     overflow: auto;
 }
+@media screen and (min-width: 1024px){
+    main section div#content{
+        background-color: rgb(231, 231, 231);
+        height: 720PX;
+    }
+}
+@media screen and (max-width: 375px){
+    main section div#content{
+        background-color: rgb(231, 231, 231);
+        height: 720PX;
+        width: 375px;
+        margin-right: 150px;
+        margin-top: 5px;
+    }
+}
 /*=====>>> ABOUT ME <<<======*/
-#myname{
-    /* color: black; */
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 200%; 
+@media screen and (min-width: 1024px){
+    div#about{
+        background-color: rgb(38, 36, 44);
+        width: 400px;
+        height: 720PX;
+        color: white;
+        margin-left: 0.5%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    #myname{
+        color: rgb(255, 123, 0);
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 200%; 
+    }
+    #profilephoto{
+        width: 300px;
+    }
+    header nav div#about ul li{
+        color: white;
+        padding: 5% 15%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    header nav div#about ul{
+        display: inline-flex;
+        list-style-type: none;
+        padding: 5% 6%;
+    } 
+    header nav div#about ul li:hover{
+        color: black;
+        transform: scale(1.25);
+    }
 }
-div#about{
-    background-color: rgb(38, 36, 44);
-    width: 400px;
-    height: 720PX;
-    color: white;
-    margin-left: 0.5%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-#profilephoto{
-    width: 300px;
-}
-header nav div#about ul li{
-    color: white;
-    padding: 5% 15%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-header nav div#about ul{
-    display: inline-flex;
-    list-style-type: none;
-    padding: 5% 6%;
-} 
-header nav div#about ul li:hover{
-    color: black;
-    transform: scale(1.25);
+@media screen and (max-width: 375px){
+    div#about{
+        /* background-color: rgb(80, 61, 138); */
+        background-color: rgb(38, 36, 44);
+        width: 375px;
+        height: 500PX;
+        color: white;
+        margin-left: 0.5%;
+        margin-bottom: 5px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    #myname{
+        color: rgb(255, 123, 0);
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 200%; 
+    }
+    #profilephoto{
+        
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+    header nav div#about ul li{
+        color: white;
+        padding: 5% 15%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    header nav div#about ul{
+        display: inline-flex;
+        list-style-type: none;
+        /* padding: 5% 6%; */
+        display: block;
+        text-align: center;
+    } 
+    header nav div#about ul li:hover{
+        color: black;
+        transform: scale(1.25);
+    }
 }
