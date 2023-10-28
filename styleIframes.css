@@ -15,7 +15,7 @@ hr{
 p#contenttext{
     color: #00000000;
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1023px){
     .line hr{
         border: 0;
         height: 70px;

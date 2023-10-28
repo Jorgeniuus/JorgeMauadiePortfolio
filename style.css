@@ -14,7 +14,7 @@ body{
         display: flex;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1023px){
     .flex{
         display: flex;  
         /* flex-direction: row-reverse; */
@@ -70,7 +70,7 @@ header{
         background-color: rgb(231, 231, 231);
     }
 } 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1023px){
     h1#titleprojects{
         margin-left: 5px;
         padding-top: 6%;
@@ -113,12 +113,13 @@ header{
         height: 720PX;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1023px){
     main section div#content{
         background-color: rgb(231, 231, 231);
         height: 720PX;
         width: 375px;
         margin-right: 150px;
+        margin-left: 2px;
         margin-top: 5px;
     }
 }
@@ -160,7 +161,7 @@ header{
         transform: scale(1.25);
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1023px){
     div#about{
         /* background-color: rgb(80, 61, 138); */
         background-color: rgb(38, 36, 44);
