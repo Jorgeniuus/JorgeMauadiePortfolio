@@ -14,7 +14,7 @@ body{
         display: flex;
     }
 }
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
     .flex{
         display: flex;  
         /* flex-direction: row-reverse; */
@@ -62,11 +62,13 @@ header{
         padding: 15% 15%;
         cursor: pointer;
         transition: 0.3s;
+        font-size: 12px;
     }
     header nav div#projectsmenu ul li:hover{
         color: black;
-        padding: 15% 35%;
-        transform: scale(1.25);
+        padding: 15% 30%;
+        font-size: 12px;
+        transform: scale(1.2);
         background-color: rgb(231, 231, 231);
     }
 } 
@@ -117,9 +119,6 @@ header{
         background-color: rgb(231, 231, 231);
         height: 720PX;
         width: 100%;
-        /* max-width: 1024px; */
-        /* margin-right: 150px; */
-        /* margin-left: 2px; */
         margin-top: 5px; 
     }
 }
