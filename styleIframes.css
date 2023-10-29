@@ -7,23 +7,15 @@ iframe#abeastoutside{
 iframe#fpsmultiplayer{
     height: 167.5%;
 }
-hr{
-    border: 0;
-    height: 5px;
-    background: #000000;
-}
 p#contenttext{
     color: #00000000;
 }
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
     .line hr{
         border: 0;
         height: 70px;
         width: 3px;
-        /* background: #ffffff; */
-        background: #ff7b00; 
-        /* margin-right: 170px; */
-        /* padding-left: 5px; */
+        background-color: #ff7b00;
     }
     iframe{
         padding-left: 2.5%;
@@ -37,7 +29,6 @@ p#contenttext{
     .line hr{
         border: 0;
         height: 3px;
-        /* background: #ffffff; */
         background: #ff7b00; 
     }
     iframe{

@@ -70,28 +70,27 @@ header{
         background-color: rgb(231, 231, 231);
     }
 } 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
     h1#titleprojects{
-        margin-left: 5px;
-        padding-top: 6%;
+        margin-top: 20px;
+        margin-left: 20px;
     }
     div#projectsmenu{
         background-color: rgb(38, 36, 44);
-        /* width: 375px; */
         width: 100%;
         height: 70PX;
         padding-bottom: 50px;
         color: rgb(255, 123, 0);
-        /* margin-left: 0.5%;
-        margin-right: 0.5%; */
         display: inline-flex;
     }
     header nav div#projectsmenu ul{
         list-style-type: none;
-        margin-top: 6%;
+        /* margin-top: 6%; */
     }
     header nav div#projectsmenu ul li{
-        margin-right: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 8px;
         color: rgb(231, 231, 231);
         cursor: pointer;
         transition: 0.3s;
@@ -101,7 +100,6 @@ header{
     header nav div#projectsmenu ul li:hover{
         color: black;
         transform: scale(1.25);
-        background-color: rgb(231, 231, 231);
     }
 } 
 /*=====>>> CONTENT <<<=====*/
@@ -178,7 +176,7 @@ header{
         background-color: rgb(38, 36, 44);
         /* width: 375px; */
         width: 100%;
-        height: 500PX;
+        max-height: 500PX;
         color: white;
         /* margin-left: 0.5%; */
         margin-bottom: 5px;
@@ -189,19 +187,20 @@ header{
         color: rgb(255, 123, 0);
         text-align: center;
         text-transform: uppercase;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 200%; 
     }
     #profilephoto{
-        
-        width: 200px;
         display: block;
+        width: 200px;
         margin: auto;
     }
     header nav div#about ul li{
+        display:inline-block;
         color: white;
-        padding: 5% 15%;
+        padding-top: 3%;
+        margin: 5px;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -217,12 +216,13 @@ header{
         transform: scale(1.25);
     }
     .resume{
-        display: flex;
-        list-style-type: none;
-        padding: 5%;
         display: block;
+        list-style-type: none;
+        padding: 2%;
+        margin-bottom: auto;
         text-align: center;
-        margin-top: 2%;
+        margin-top: 50px;
+        margin-bottom: 10px;
         color: rgb(30, 255, 0);
     } 
 }
