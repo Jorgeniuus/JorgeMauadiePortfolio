@@ -1,0 +1,40 @@
+div#content{
+    text-align: center;
+}
+.previewcontent img{
+    display: block;
+    width: 90%;
+    border-radius: 20%;
+    padding-top: 10px;
+    /* background-color: green; */
+}
+.previewcontent h1{
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(255, 123, 0);
+}
+.previewcontent{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+    margin: 20px;
+    box-shadow: 10px 10px 5px black;
+    background-color: rgb(38, 36, 44);
+    /* background-color: rgb(182, 182, 182); */
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.previewcontent:hover{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+    margin: 20px;
+    /* box-shadow: 8px 8px 8px rgb(0, 26, 255); */
+    box-shadow: 8px 8px 8px  rgb(255, 123, 0);
+    background-color: rgb(38, 36, 44);
+
+    transform: scale(1.1);
+}

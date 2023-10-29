@@ -65,8 +65,8 @@ header{
     }
     header nav div#projectsmenu ul li:hover{
         color: black;
-        transform: scale(1.25);
         padding: 15% 35%;
+        transform: scale(1.25);
         background-color: rgb(231, 231, 231);
     }
 } 
@@ -77,12 +77,13 @@ header{
     }
     div#projectsmenu{
         background-color: rgb(38, 36, 44);
-        width: 375px;
+        /* width: 375px; */
+        width: 100%;
         height: 70PX;
         padding-bottom: 50px;
         color: rgb(255, 123, 0);
-        margin-left: 0.5%;
-        margin-right: 0.5%;
+        /* margin-left: 0.5%;
+        margin-right: 0.5%; */
         display: inline-flex;
     }
     header nav div#projectsmenu ul{
@@ -110,17 +111,18 @@ header{
 @media screen and (min-width: 1024px){
     main section div#content{
         background-color: rgb(231, 231, 231);
-        height: 720PX;
+        height: 720px;
     }
 }
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
     main section div#content{
         background-color: rgb(231, 231, 231);
         height: 720PX;
-        width: 375px;
-        margin-right: 150px;
-        margin-left: 2px;
-        margin-top: 5px;
+        width: 100%;
+        /* max-width: 1024px; */
+        /* margin-right: 150px; */
+        /* margin-left: 2px; */
+        margin-top: 5px; 
     }
 }
 /*=====>>> ABOUT ME <<<======*/
@@ -174,10 +176,11 @@ header{
     div#about{
         /* background-color: rgb(80, 61, 138); */
         background-color: rgb(38, 36, 44);
-        width: 375px;
+        /* width: 375px; */
+        width: 100%;
         height: 500PX;
         color: white;
-        margin-left: 0.5%;
+        /* margin-left: 0.5%; */
         margin-bottom: 5px;
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
@@ -219,7 +222,7 @@ header{
         padding: 5%;
         display: block;
         text-align: center;
-        margin-top: 15%;
+        margin-top: 2%;
         color: rgb(30, 255, 0);
     } 
 }
