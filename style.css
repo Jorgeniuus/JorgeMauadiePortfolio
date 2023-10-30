@@ -58,18 +58,18 @@ header{
         margin-top: 20%;
     }
     header nav div#projectsmenu ul li{
-        color: white;
+        color: rgb(255, 255, 255);
         padding: 15% 15%;
         cursor: pointer;
         transition: 0.3s;
         font-size: 12px;
     }
     header nav div#projectsmenu ul li:hover{
-        color: black;
+        color: rgb(0, 0, 0);
         padding: 15% 30%;
         font-size: 12px;
         transform: scale(1.2);
-        background-color: rgb(231, 231, 231);
+        background-color: rgba(231, 231, 231, 0.493);
     }
 } 
 @media screen and (max-width: 1024px){
@@ -100,8 +100,9 @@ header{
         display: inline-flex;
     }
     header nav div#projectsmenu ul li:hover{
-        color: black;
-        transform: scale(1.25);
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        transform: scale(1.5);
     }
 } 
 /*=====>>> CONTENT <<<=====*/

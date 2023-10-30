@@ -1,0 +1,147 @@
+let typeProjectsName = ['home', 'mobile', 'pc', 'multiplayer', 'aboutme',]
+let typeTecnology = ['unity', 'frontend']
+
+const unityDeveloperTimeExperience = new Date(2022, 1, 1)
+const frontEndDeveloperTimeExperience = new Date(2023, 9, 28)
+let currentDate = new Date()
+let currentDay = currentDate.getDay()
+let currentMonth = currentDate.getMonth()
+let currentYear = currentDate.getFullYear()
+
+MenuSelect()
+
+function MenuSelect(itemMenuSelected = 0, classContent = 'home'){
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        let buttonSelect = document.getElementsByClassName("itemmenu")
+
+        for(let i = 0; i < buttonSelect.length; i++){ 
+            if(i == itemMenuSelected){
+                buttonSelect[i].style.color =  'rgb(255, 123, 0)';
+                buttonSelect[i].style.fontSize = '12px';
+                buttonSelect[i].style.transform = 'scale(1.5)';    
+            }else{
+                buttonSelect[i].style.backgroundColor =  '';
+                buttonSelect[i].style.color =  'rgb(255, 255, 255)';
+                buttonSelect[i].style.fontSize = '12px';
+                buttonSelect[i].style.transform = 'scale(1.2)';
+            }
+        }
+        SelectTypeContent(classContent)
+    } else {
+        let buttonSelect = document.getElementsByClassName("itemmenu")
+
+        for(let i = 0; i < buttonSelect.length; i++){
+            if(i == itemMenuSelected){
+                buttonSelect[i].style.backgroundColor =  'rgb(231, 231, 231)';
+                buttonSelect[i].style.color =  'rgb(0, 0, 0)';
+                buttonSelect[i].style.padding = '15% 30%'
+                buttonSelect[i].style.fontSize = '12px';
+                buttonSelect[i].style.transform = 'scale(1.2)';
+            }else{
+                buttonSelect[i].style.backgroundColor =  '';
+                buttonSelect[i].style.color =  'rgb(255, 255, 255)';
+                buttonSelect[i].style.padding = '15% 15%'
+                buttonSelect[i].style.fontSize = '12px';
+                buttonSelect[i].style.transform = 'scale(1.2)';
+            }
+        }
+        SelectTypeContent(classContent)
+    }
+}
+function SelectTypeContent(classContent){
+    for(let i = 0; i < typeProjectsName.length; i++){
+        let createPreviewContents = document.getElementsByClassName(typeProjectsName[i])
+
+        if(typeProjectsName[i] === classContent){
+            for(let j = 0; j < createPreviewContents.length; j++){
+                createPreviewContents[j].style.display = 'inline-block';
+            }
+        }else{
+            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'home')
+            for(let j = 0; j < createPreviewContents.length; j++){
+                createPreviewContents[j].style.display = 'none';
+           }
+        }
+    }
+}
+//ANOS DE EXPERIÊNCIA
+function TecnologiesTimeExperience(whichTecnologyIs){
+    if(whichTecnologyIs == typeTecnology[0]){
+        let finalDate = new Date(currentYear, currentMonth+1, currentDay+1); 
+        
+        let monthsDifference = (finalDate.getFullYear() - unityDeveloperTimeExperience.getFullYear()) * 12;
+        monthsDifference -= unityDeveloperTimeExperience.getMonth();
+        monthsDifference += finalDate.getMonth();
+        
+        let yearsDifference = Math.floor(monthsDifference / 12);
+        monthsDifference = monthsDifference % 12;
+        
+        if(yearsDifference >= 1){
+            if(monthsDifference == 0){
+                alert(`${yearsDifference} ano de experiêcia`); 
+            }else {
+                alert(`${yearsDifference}.${monthsDifference} anos de experiêcia`);
+            } 
+  
+        }else if(monthsDifference >= 1){
+            alert(`${monthsDifference} mês de experiêcia`); 
+        }else{
+            alert(`Menos de 1 mês de experiêcia`); 
+        }
+    }else{
+        let finalDate = new Date(currentYear, currentMonth+1, currentDay+1); 
+        
+        let monthsDifference = (finalDate.getFullYear() - frontEndDeveloperTimeExperience.getFullYear()) * 12;
+        monthsDifference -= frontEndDeveloperTimeExperience.getMonth();
+        monthsDifference += finalDate.getMonth();
+        
+        let yearsDifference = Math.floor(monthsDifference / 12);
+        monthsDifference = monthsDifference % 12;
+        
+        if(yearsDifference >= 1){
+            if(monthsDifference == 0){
+                alert(`${yearsDifference} ano de experiêcia`); 
+            }else {
+                alert(`${yearsDifference}.${monthsDifference} anos de experiêcia`);
+            }  
+        }else if(monthsDifference >= 1){
+            alert(`${monthsDifference} mês de experiêcia`); 
+        }else{
+            alert(`Menos de 1 mês de experiêcia`); 
+        }
+    }
+}
+// TecnologiesTimeExperience(typeTecnology[0])
+
+
+function OnClickPreviewToChangeToPageGame(){
+    //mudar parra pagipna de conteudo
+    //escconder menu e mostrar ceta de voltar no lugar
+    // adicionar rolagem paarar tela grande
+    // adcionar responsividadde no ifraame para tela de celular
+    for(let i = 0; i < typeProjectsName.length; i++){
+        let createPreviewContents = document.getElementsByClassName(typeProjectsName[i])
+
+        for(let j = 0; j < createPreviewContents.length; j++){
+            createPreviewContents[j].style.display = 'none';
+        }
+        // if(typeProjectsName[i] === classContent){
+        //     for(let j = 0; j < createPreviewContents.length; j++){
+        //         createPreviewContents[j].style.display = 'inline-block';
+        //     }
+        // }else{
+        //     if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'home')
+        //     for(let j = 0; j < createPreviewContents.length; j++){
+        //         createPreviewContents[j].style.display = 'none';
+        //    }
+        // }
+    }
+
+    const iframe = document.getElementById('iframeContentGame');
+    iframe.onload = function() {
+        const body = iframe.contentDocument.body;
+        const height = body.scrollHeight;
+        iframe.style.height = height + 'px';
+    }
+}
+

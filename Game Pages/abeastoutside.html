@@ -14,36 +14,44 @@
         h1{
             font-size: 250%;
             margin-bottom: 10px;
+            text-align: center;
+        }
+        a{
+            color: rgb(0, 47, 255);
         }
         p{
             font-size: 150%;
         }
         img#photo{
             width: 300px;
+            display: block;
+            margin: auto;
         }
         .photo{
-            /* width: 1000px; */
             width: 48%;
             padding-top: 3px;
             padding-right: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .photo:active{
+            transform: scale(2); 
         }
         .divsamplephoto{
             display: inline-table;
+            text-align: center;
         }
         #video{
+            display: block;
+            margin: auto;
             width: 50%;
         }
         a:after {
             content: "\1F517";
             font-size: 25px; 
         }
-        .photo:hover{
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .photo:active{
-            color: black;
-            transform: scale(2);
+        div#space{
+            height: 200px;
         }
     </style>
 </head>
@@ -72,10 +80,7 @@
             <img class="photo" src="../Imagens/Jogos/A Beast Outside/9.png" alt="Sample Photo">
             <img class="photo" src="../Imagens/Jogos/A Beast Outside/10.png" alt="Sample Photo">
         </div>
+        <div id="space"></div>
     </section>
-
-    <script>
-
-    </script>
 </body>
 </html>

@@ -38,57 +38,43 @@
     <header>
         <h1 class="warning"><span>&#x26A0;</span>&nbsp;&nbsp;PORTFOLIO HAS BEEN BEING BUILT!&nbsp;&nbsp;<span>&#x26A0; </span></h1>
         <div id="interfacemenu">
-            <!--MENU PROJECTS--> 
+            <!--PROJECTS MENU--> 
             <nav class="flex" id="menu">
                 <div id="projectsmenu">
                     <h1 id="titleprojects">Projects</h1><br><div class="line"><hr></div>
                     <ul id="proejcts">
-                        <li><a href="https://google.com"></a>Home</li>
-                        <li><a href="aqui vai o link da pagina incial"></a>Mobile</li>
-                        <li><a href="aqui vai o link da pagina incial"></a>PC</li>
-                        <li><a href="aqui vai o link da pagina incial"></a>Multiplayer</li>
-                        <li><a href="aqui vai o link da pagina incial"></a>About Me</li>
+                        <li class="itemmenu" onclick="MenuSelect(0, 'home')">Home</li>
+                        <li class="itemmenu" onclick="MenuSelect(1, 'mobile')">Mobile</li>
+                        <li class="itemmenu" onclick="MenuSelect(2, 'pc')">PC</li>
+                        <li class="itemmenu" onclick="MenuSelect(3, 'multiplayer')">Multiplayer</li>
+                        <li class="itemmenu" onclick="MenuSelect(4, 'aboutme')">About Me</li>
                     </ul>
                 </div>
-                <!--FIM MENU PROJECTS--> 
+                <!--END PROJECTS MENU--> 
 
                 <!--CONTENT-->
                 <main> <!--CENTRAL CONTENT-->
                     <section class="flex" id="content">
                         <div class="rolagem" id="content">
 
-                            <!-- <div class="previewcontent">
+                            <a href="Game Pages/shipdestroyer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent home mobile">
                                 <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
                                 <h1>Shid Destroyer</h1>
-                            </div>
-                            <div class="previewcontent">
+                            </div></a>
+                            <a href="Game Pages/abeastoutside.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent home pc">
                                 <img src="Imagens/Jogos/A Beast Outside/ProfilePhotoABO2.png" alt="Preview Project">
                                 <h1>A Beast Outside</h1>
-                            </div>
-                            <div class="previewcontent">
+                            </div></a>
+                            <a href="Game Pages/fpsmultiplayer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent home pc multiplayer">
                                 <img src="Imagens/Jogos/FPS Multiplayer/ProfilephotoFPS2.png" alt="Preview Project">
                                 <h1>FPS Multiplayer</h1>
-                            </div>
-                            <div class="previewcontent">
-                                <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
-                                <h1>Shid Destroyer</h1>
-                            </div>
-                            <div class="previewcontent">
-                                <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
-                                <h1>Shid Destroyer</h1>
-                            </div>
-                            <div class="previewcontent">
-                                <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
-                                <h1>Shid Destroyer</h1>
-                            </div>
-                            <div class="previewcontent">
-                                <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
-                                <h1>Shid Destroyer</h1>
-                            </div> -->
+                            </div></a>
 
-                            <iframe id="shipdestroyer" src="Game Pages/shipdestroyer.html" frameborder="0" scrolling="no"></iframe> <br><br><hr>
+                            <iframe src="" name="iframeContentGame" id="iframeContentGame" frameborder="0" scrolling="no"></iframe> <br><br><hr>
+                            
+                            <!-- <iframe id="shipdestroyer" src="Game Pages/shipdestroyer.html" frameborder="0" scrolling="no"></iframe> <br><br><hr>
                             <iframe id="abeastoutside" src="Game Pages/abeastoutside.html" frameborder="0" scrolling="no"></iframe> <br><br><hr>
-                            <iframe id="fpsmultiplayer" src="Game Pages/fpsmultiplayer.html" frameborder="0" scrolling="no"></iframe> <br><br><hr>
+                            <iframe id="fpsmultiplayer" src="Game Pages/fpsmultiplayer.html" frameborder="0" scrolling="no"></iframe> <br><br><hr> -->
                             
                             <!--FILLING CONTENT--> 
                             <p id="contenttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque provident a ab iste cum vero libero rerum odio animi harum omnis laudantium dignissimos, enim perferendis rem tempore? Eveniet, pariatur.</p>
@@ -112,5 +98,6 @@
             </nav>
         </div>
     </header>
+    <script src="ContentManager.js"></script>
 </body>
 </html>
