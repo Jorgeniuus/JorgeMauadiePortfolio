@@ -1,5 +1,7 @@
-let typeProjectsName = ['home', 'mobile', 'pc', 'multiplayer', 'aboutme',]
+let typeProjectsName = ['Home', 'Mobile', 'PC', 'Multiplayer', 'About Me',]
 let typeTecnology = ['unity', 'frontend']
+let typeContentSelected = 'Home'
+let activeButtonsMenu = true
 
 const unityDeveloperTimeExperience = new Date(2022, 1, 1)
 const frontEndDeveloperTimeExperience = new Date(2023, 9, 28)
@@ -10,7 +12,7 @@ let currentYear = currentDate.getFullYear()
 
 MenuSelect()
 
-function MenuSelect(itemMenuSelected = 0, classContent = 'home'){
+function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
     if (window.matchMedia("(max-width: 1024px)").matches) {
         let buttonSelect = document.getElementsByClassName("itemmenu")
 
@@ -50,19 +52,20 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'home'){
 }
 function SelectTypeContent(classContent){
     for(let i = 0; i < typeProjectsName.length; i++){
-        let createPreviewContents = document.getElementsByClassName(typeProjectsName[i])
+        let hidePreviewContents = document.getElementsByClassName(typeProjectsName[i])
 
         if(typeProjectsName[i] === classContent){
-            for(let j = 0; j < createPreviewContents.length; j++){
-                createPreviewContents[j].style.display = 'inline-block';
+            for(let j = 0; j < hidePreviewContents.length; j++){
+                hidePreviewContents[j].style.display = 'inline-block';
             }
         }else{
-            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'home')
-            for(let j = 0; j < createPreviewContents.length; j++){
-                createPreviewContents[j].style.display = 'none';
+            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home')
+            for(let j = 0; j < hidePreviewContents.length; j++){
+                hidePreviewContents[j].style.display = 'none';
            }
         }
     }
+    typeContentSelected = classContent
 }
 //ANOS DE EXPERIÊNCIA
 function TecnologiesTimeExperience(whichTecnologyIs){
@@ -115,28 +118,32 @@ function TecnologiesTimeExperience(whichTecnologyIs){
 
 
 function OnClickPreviewToChangeToPageGame(){
-    //mudar parra pagipna de conteudo
     //escconder menu e mostrar ceta de voltar no lugar
-    // adicionar rolagem paarar tela grande
-    // adcionar responsividadde no ifraame para tela de celular
     for(let i = 0; i < typeProjectsName.length; i++){
-        let createPreviewContents = document.getElementsByClassName(typeProjectsName[i])
+        let hidePreviewContents = document.getElementsByClassName(typeProjectsName[i])
 
-        for(let j = 0; j < createPreviewContents.length; j++){
-            createPreviewContents[j].style.display = 'none';
+        for(let j = 0; j < hidePreviewContents.length; j++){
+            hidePreviewContents[j].style.display = 'none';
         }
-        // if(typeProjectsName[i] === classContent){
-        //     for(let j = 0; j < createPreviewContents.length; j++){
-        //         createPreviewContents[j].style.display = 'inline-block';
-        //     }
-        // }else{
-        //     if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'home')
-        //     for(let j = 0; j < createPreviewContents.length; j++){
-        //         createPreviewContents[j].style.display = 'none';
-        //    }
-        // }
     }
 
+    // activeButtonsMenu = !activeButtonsMenu
+
+    // let buttonsMenu = document.getElementsByClassName('itemmenu')
+    // for(let i = 0; i < buttonsMenu.length; i++){
+    //     if(typeContentSelected == buttonsMenu[i].innerHTML){
+    //         buttonsMenu[i].innerHTML = '< Back'
+    //     }else{
+    //         if(activeButtonsMenu == true){
+    //             buttonsMenu[i].style.display = 'none';
+    //         }else{
+    //             buttonsMenu[i].style.display = 'inline-block';
+    //         }
+    //     }
+    // } 
+    ResponsiveIframePageLoaded()
+}
+function ResponsiveIframePageLoaded(){
     const iframe = document.getElementById('iframeContentGame');
     iframe.onload = function() {
         const body = iframe.contentDocument.body;
