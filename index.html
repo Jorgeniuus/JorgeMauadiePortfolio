@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleIframes.css">
     <link rel="stylesheet" href="PreviewStyle.css">
+    <link rel="stylesheet" href="TanslateLanguages.css">
     <!--ICONS BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--END ICONS BOOTSTRAP-->
@@ -41,16 +42,28 @@
     <header>
         <h1 class="warning"><span>&#x26A0;</span>&nbsp;&nbsp;PORTFOLIO HAS BEEN BEING BUILT!&nbsp;&nbsp;<span>&#x26A0; </span></h1>
         <div id="interfacemenu">
+            <!--LANGUAGES--> 
+            <div id="languages">
+                <ul>
+                    <li onclick="TranslateConversion(1)">
+                        <img src="Imagens/Languages/ptbrlanguage.png" alt="Idiom Portuguese">
+                    </li>
+                    <li onclick="TranslateConversion(0)">
+                        <img src="Imagens/Languages/usaslanguage.png" alt="Idiom English">
+                    </li>
+                </ul>
+            </div>
+            <!--END LANGUAGES--> 
             <!--PROJECTS MENU--> 
             <nav class="flex" id="menu">
                 <div id="projectsmenu">
                     <h1 id="titleprojects">Projects</h1><br><div class="line"><hr></div>
                     <ul id="proejcts">
-                        <li class="itemmenu" onclick="MenuSelect(0, 'Home')">Home</li>
-                        <li class="itemmenu" onclick="MenuSelect(1, 'Mobile')">Mobile</li>
-                        <li class="itemmenu" onclick="MenuSelect(2, 'PC')">PC</li>
-                        <li class="itemmenu" onclick="MenuSelect(3, 'Multiplayer')">Multiplayer</li>
-                        <li class="itemmenu" onclick="MenuSelect(4, 'About Me')">About Me</li>
+                        <li class="itemmenu" id="home" onclick="MenuSelect(0, 'Home')">Home</li>
+                        <li class="itemmenu" id="mobile" onclick="MenuSelect(1, 'Mobile')">Mobile</li>
+                        <li class="itemmenu" id="pc" onclick="MenuSelect(2, 'PC')">PC</li>
+                        <li class="itemmenu" id="multiplayer" onclick="MenuSelect(3, 'Multiplayer')">Multiplayer</li>
+                        <li class="itemmenu" id="aboutme" onclick="MenuSelect(4, 'About Me')">About Me</li>
                     </ul>
                 </div>
                 <!--END PROJECTS MENU--> 
@@ -100,12 +113,13 @@
                         <li><img src="Imagens/Tecnologias/htmltec.png" alt="HTML"></li>
                         <li><img src="Imagens/Tecnologias/csstec.png" alt="CSS"></li>
                     </ul>
-                    <a class="resume" id="resumefront" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>
+                    <a class="resume" id="resumefront" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>    
                 </div>
                 <!--END ABOUT ME-->
             </nav>
         </div>
     </header>
     <script src="ContentManager.js"></script>
+    <script src="Translate.js"></script>
 </body>
 </html>

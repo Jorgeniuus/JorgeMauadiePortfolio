@@ -1,27 +1,27 @@
 /*
-MENU LATERAL ESQUERDO:
-- titulo Projetos
-- inicio: tela de inicio será tela de destaque com meu melhor conteúdo ou melhores
-- Mobile
-- PC
-- Multiplayer
-
-SOBRE LATERAL DIREITO:
-- foto
-- tecnologias abaixo da foto
-- redes sociais
-- contact me
-- About Me / Sobre mim
-
-CONTEUDO:
-- jogos
-- nome
-- fotos
-- video
-- resumo explicativo
-
-TAREFA:
+===>>> TAREFA <<<===:
+PC:
+- fazer aparecer nome nos icones linkedin e github quando passa o mouse
+- mostrar barra lateral com experiencia das tecnolofias
 - 
+
+Mobile:
+- quando sobe ou desce a pagina, atualiza sozinho e volta para o menu home
+- afastar mais os icones ded social media e deixar maiores
+- botar barra de esperiencia nas tecnolodis
+
+Language:
+- adicionar banderas doss idiomas e adaptar textos
+
+About Me:
+- descrção sobre mim
+- descrição sobre o que fiz nas tecnologias
+
+Novas Abas:
+- aba de projetos de terceiros que trabalhei
+- aba de projetos que estou desenvolvendo 
+
+=====================================================================================================
 SOBRRE MIM
 - Português:
     Sou um desenvolvedor de jogos que utiliza a Game Engine Unity 3D, que busca 
@@ -41,12 +41,4 @@ Mirror Networking. In the future I intend starting learn VR and AR development f
 games in unity. Recently I have been learning front-end to build my own portfolio. 
 
 =====================================================================================================
-ICONES:
-- unity: <i class="bi bi-unity"></i>
-- linkedin: <i class="bi bi-linkedin"></i>
-- github; <i class="bi bi-github"></i>
--css: <i class="bi bi-filetype-css"></i>
-- javascript: <i class="bi bi-filetype-js"></i>
-- html: <i class="bi bi-filetype-html"></i>
-- resume: <i class="bi bi-file-earmark-person"></i>
 */

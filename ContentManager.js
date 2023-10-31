@@ -12,6 +12,12 @@ let currentYear = currentDate.getFullYear()
 
 MenuSelect()
 
+window.onresize = function(event) {
+    if (window.innerWidth >= 1024) {
+            MenuSelect()
+        }else  MenuSelect()
+    };
+
 function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
     let buttonSelect = document.getElementsByClassName("itemmenu")
     let initialIframe = document.getElementById("iframeContentGame")
@@ -66,6 +72,29 @@ function SelectTypeContent(classContent){
     }
     typeContentSelected = classContent
 }
+
+function OnClickPreviewToChangeToPageGame(){
+    let initialIframe = document.getElementById("iframeContentGame")
+    initialIframe.style.display = 'inline-block';
+
+    for(let i = 0; i < typeProjectsName.length; i++){
+        let hidePreviewContents = document.getElementsByClassName(typeProjectsName[i])
+
+        for(let j = 0; j < hidePreviewContents.length; j++){
+            hidePreviewContents[j].style.display = 'none';
+        }
+    }
+    ResponsiveIframePageLoaded()
+}
+function ResponsiveIframePageLoaded(){
+    const iframe = document.getElementById('iframeContentGame');
+    iframe.onload = function() {
+        const body = iframe.contentDocument.body;
+        const height = body.scrollHeight;
+        iframe.style.height = height + 'px';
+    }
+}
+
 //ANOS DE EXPERIÊNCIA
 function TecnologiesTimeExperience(whichTecnologyIs){
     if(whichTecnologyIs == typeTecnology[0]){
@@ -114,47 +143,3 @@ function TecnologiesTimeExperience(whichTecnologyIs){
     }
 }
 // TecnologiesTimeExperience(typeTecnology[0])
-
-
-function OnClickPreviewToChangeToPageGame(){
-    let initialIframe = document.getElementById("iframeContentGame")
-    initialIframe.style.display = 'inline-block';
-
-    for(let i = 0; i < typeProjectsName.length; i++){
-        let hidePreviewContents = document.getElementsByClassName(typeProjectsName[i])
-
-        for(let j = 0; j < hidePreviewContents.length; j++){
-            hidePreviewContents[j].style.display = 'none';
-        }
-    }
-
-    // activeButtonsMenu = !activeButtonsMenu
-
-    // let buttonsMenu = document.getElementsByClassName('itemmenu')
-    // for(let i = 0; i < buttonsMenu.length; i++){
-    //     if(typeContentSelected == buttonsMenu[i].innerHTML){
-    //         buttonsMenu[i].innerHTML = '< Back'
-    //     }else{
-    //         if(activeButtonsMenu == true){
-    //             buttonsMenu[i].style.display = 'none';
-    //         }else{
-    //             buttonsMenu[i].style.display = 'inline-block';
-    //         }
-    //     }
-    // } 
-    ResponsiveIframePageLoaded()
-}
-function ResponsiveIframePageLoaded(){
-    const iframe = document.getElementById('iframeContentGame');
-    iframe.onload = function() {
-        const body = iframe.contentDocument.body;
-        const height = body.scrollHeight;
-        iframe.style.height = height + 'px';
-    }
-}
-
-window.onresize = function(event) {
-    if (window.innerWidth >= 1024) {
-            MenuSelect()
-        }else  MenuSelect()
-    };
