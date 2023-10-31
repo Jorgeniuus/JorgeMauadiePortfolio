@@ -75,20 +75,25 @@ header{
 @media screen and (max-width: 1024px){
     h1#titleprojects{
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     div#projectsmenu{
+        display: block;
         background-color: rgb(38, 36, 44);
         width: 100%;
-        height: 70PX;
-        padding-bottom: 50px;
+        height: 70px;
+        text-align: center;
+        /* padding-bottom: 50px; */
         color: rgb(255, 123, 0);
         display: inline-flex;
     }
     header nav div#projectsmenu ul{
+        display: block;
+        text-align: center;
         list-style-type: none;
-        /* margin-top: 6%; */
-        /* background-color: yellow; */
+        width: 80%;
+        height: 70px;
     }
     header nav div#projectsmenu ul li{
         margin-top: 20px;
@@ -196,7 +201,7 @@ header{
         background-color: rgb(38, 36, 44);
         /* width: 375px; */
         width: 100%;
-        max-height: 500PX;
+        max-height: 720PX;
         color: white;
         /* margin-left: 0.5%; */
         margin-bottom: 5px;
@@ -241,7 +246,6 @@ header{
         display: block;
         width: 35px;
         margin: 2px;
-
         margin-bottom: -5px;
         margin-top: -5px;
     } 
@@ -255,26 +259,23 @@ header{
         display: inline-flex;
         list-style-type: none;
         padding: 5% 6%;
+        display: block;
+        text-align: center;
     }
 
 
-    header nav div#about ul{
-        display: inline-flex;
-        list-style-type: none;
-        /* padding: 5% 6%; */
-        display: block;
-        text-align: center;
-    } 
     header nav div#about ul li.interact:hover{
         color: black;
         transform: scale(1.25);
     }
     .resume{
         display: block;
+        width: 200px;
         list-style-type: none;
-        padding-bottom: 20%;
+        padding-bottom: 18px;
+        padding-top: 18px;
         text-align: center;
-        margin-top: 10x;
+        margin-top: 5px;
         margin-bottom: 10px;
         color: rgb(30, 255, 0);
     } 
