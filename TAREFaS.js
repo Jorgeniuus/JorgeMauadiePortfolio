@@ -41,4 +41,12 @@ Mirror Networking. In the future I intend starting learn VR and AR development f
 games in unity. Recently I have been learning front-end to build my own portfolio. 
 
 =====================================================================================================
+ICONES:
+- unity: <i class="bi bi-unity"></i>
+- linkedin: <i class="bi bi-linkedin"></i>
+- github; <i class="bi bi-github"></i>
+-css: <i class="bi bi-filetype-css"></i>
+- javascript: <i class="bi bi-filetype-js"></i>
+- html: <i class="bi bi-filetype-html"></i>
+- resume: <i class="bi bi-file-earmark-person"></i>
 */

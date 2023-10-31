@@ -41,17 +41,26 @@
             display: inline-table;
             text-align: center;
         }
-        #video{
-            display: block;
-            margin: auto;
-            width: 50%;
-        }
         a:after {
             content: "\1F517";
             font-size: 25px; 
         }
         div#space{
             height: 200px;
+        }
+        @media screen and (min-width: 1024px){
+            #video{
+                display: block;
+                margin: auto;
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 1024px){
+            #video{
+                display: block;
+                margin: auto;
+                width: 100%;
+            }
         }
     </style>
 </head>

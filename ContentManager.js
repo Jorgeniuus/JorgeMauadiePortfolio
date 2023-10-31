@@ -13,9 +13,11 @@ let currentYear = currentDate.getFullYear()
 MenuSelect()
 
 function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-        let buttonSelect = document.getElementsByClassName("itemmenu")
+    let buttonSelect = document.getElementsByClassName("itemmenu")
+    let initialIframe = document.getElementById("iframeContentGame")
+    initialIframe.style.display = 'none';
 
+    if (window.matchMedia("(max-width: 1024px)").matches) {
         for(let i = 0; i < buttonSelect.length; i++){ 
             if(i == itemMenuSelected){
                 buttonSelect[i].style.color =  'rgb(255, 123, 0)';
@@ -28,10 +30,7 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
                 buttonSelect[i].style.transform = 'scale(1.2)';
             }
         }
-        SelectTypeContent(classContent)
     } else {
-        let buttonSelect = document.getElementsByClassName("itemmenu")
-
         for(let i = 0; i < buttonSelect.length; i++){
             if(i == itemMenuSelected){
                 buttonSelect[i].style.backgroundColor =  'rgb(231, 231, 231)';
@@ -47,8 +46,8 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
                 buttonSelect[i].style.transform = 'scale(1.2)';
             }
         }
-        SelectTypeContent(classContent)
     }
+    SelectTypeContent(classContent)
 }
 function SelectTypeContent(classContent){
     for(let i = 0; i < typeProjectsName.length; i++){
@@ -118,7 +117,9 @@ function TecnologiesTimeExperience(whichTecnologyIs){
 
 
 function OnClickPreviewToChangeToPageGame(){
-    //escconder menu e mostrar ceta de voltar no lugar
+    let initialIframe = document.getElementById("iframeContentGame")
+    initialIframe.style.display = 'inline-block';
+
     for(let i = 0; i < typeProjectsName.length; i++){
         let hidePreviewContents = document.getElementsByClassName(typeProjectsName[i])
 
@@ -152,3 +153,8 @@ function ResponsiveIframePageLoaded(){
     }
 }
 
+window.onresize = function(event) {
+    if (window.innerWidth >= 1024) {
+            MenuSelect()
+        }else  MenuSelect()
+    };
