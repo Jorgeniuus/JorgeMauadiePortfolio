@@ -21,6 +21,7 @@ $(".translateElement").on('touchstart click', function(event) {
         flagTranaslateElements.forEach(element => {
             let value = this.getAttribute('data-value');
             if(element.getAttribute('data-value') == value){
+                alert("Chamou fst pc")
                 TranslateConversion(value);
             }
         });
@@ -28,6 +29,7 @@ $(".translateElement").on('touchstart click', function(event) {
         flagTranaslateElements.forEach(element => {
             let value = this.getAttribute('data-value');
             if(element.getAttribute('data-value') == value){
+                alert("Chamou fst mb")
                 TranslateConversion(value);
             }
         });
@@ -44,7 +46,7 @@ $(".translateElement").on('touchstart click', function(event) {
 
 TranslateConversion()
 function TranslateConversion(idLanguage = 0){ 
-
+    alert("Chamou scnd")
     fetch('TranslateData.json')
     .then(response => response.json())
     .then(data => {
@@ -69,6 +71,7 @@ function Translation(languageSelected){
     setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
+    alert("Chamou thrd")
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
     let innertext = innerDoc.querySelector('body section div p')
 
