@@ -11,36 +11,9 @@
     <!--ICONS BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--END ICONS BOOTSTRAP-->
-
-    <style>/*WARNING!!!*/
-        @media screen and (max-width: 1024px){
-            .warning{
-            color: white;
-            width: 100%;
-            margin-left: 10px;
-            }
-            .warning span{
-                color: yellow;
-                font-size: 30px;
-            }
-        }
-        @media screen and (min-width: 1024px){
-            .warning{
-            color: white;
-            padding-bottom: 20px;
-            padding-left: 200px;
-            width: 100%;
-            }
-            .warning span{
-                color: yellow;
-                font-size: 50px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1 class="warning"><span>&#x26A0;</span>&nbsp;&nbsp;PORTFOLIO HAS BEEN BEING BUILT!&nbsp;&nbsp;<span>&#x26A0; </span></h1>
         <div id="interfacemenu">
             <!--LANGUAGES--> 
             <div id="languages">
@@ -73,15 +46,15 @@
                     <section class="flex" id="content">
                         <div class="rolagem" id="content">
 
-                            <a href="Game Pages/shipdestroyer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent Home Mobile">
+                            <a href="Game Pages/shipdestroyer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('shipdestroyer')"><div class="previewcontent Home Mobile">
                                 <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
-                                <h1>Shid Destroyer</h1>
+                                <h1>Ship Destroyer</h1>
                             </div></a>
-                            <a href="Game Pages/abeastoutside.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent Home PC">
+                            <a href="Game Pages/abeastoutside.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('abeastoutside')"><div class="previewcontent Home PC">
                                 <img src="Imagens/Jogos/A Beast Outside/ProfilePhotoABO2.png" alt="Preview Project">
                                 <h1>A Beast Outside</h1>
                             </div></a>
-                            <a href="Game Pages/fpsmultiplayer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent Home PC Multiplayer">
+                            <a href="Game Pages/fpsmultiplayer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('fpsmultiplayer')"><div class="previewcontent Home PC Multiplayer">
                                 <img src="Imagens/Jogos/FPS Multiplayer/ProfilephotoFPS2.png" alt="Preview Project">
                                 <h1>FPS Multiplayer</h1>
                             </div></a>

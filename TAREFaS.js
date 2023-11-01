@@ -7,11 +7,6 @@ PC:
 
 Mobile:
 - quando sobe ou desce a pagina, atualiza sozinho e volta para o menu home
-- afastar mais os icones ded social media e deixar maiores
-- botar barra de esperiencia nas tecnolodis
-
-Language:
-- adicionar banderas doss idiomas e adaptar textos
 
 About Me:
 - descrção sobre mim

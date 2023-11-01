@@ -12,11 +12,11 @@ let currentYear = currentDate.getFullYear()
 
 MenuSelect()
 
-window.onresize = function(event) {
-    if (window.innerWidth >= 1024) {
-            MenuSelect()
-        }else  MenuSelect()
-    };
+// window.onresize = function(event) {
+//     if (window.innerWidth >= 1024) {
+//             MenuSelect()
+//         }else  MenuSelect()
+//     };
 
 function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
     let buttonSelect = document.getElementsByClassName("itemmenu")
