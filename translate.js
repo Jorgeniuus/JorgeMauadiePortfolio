@@ -14,6 +14,15 @@ let iframeContentGames = document.getElementById('iframeContentGame');
 let currentTranslate;
 let nameGameContentIframe;
 
+
+let flagTranaslateElements = document.querySelectorAll('.translateElement');
+flagTranaslateElements.forEach(element => {
+    element.addEventListener('click', function() {
+        let value = this.getAttribute('data-value');
+        TranslateConversion(value);
+    });
+});
+
 TranslateConversion()
 function TranslateConversion(idLanguage = 0){ 
 
