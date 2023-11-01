@@ -19,13 +19,17 @@ Novas Abas:
 =====================================================================================================
 SOBRRE MIM
 - Português:
-    Sou um desenvolvedor de jogos que utiliza a Game Engine Unity 3D, que busca 
+    Olá! me chamo, Jorge Mauadie, e sou Desenvolvedor de Jogos Digitais.
+
+    Sou um desenvolvedor de jogos que utiliza a Game Engine Unity 3D. Busco 
 sempre melhorar os conhecimentos na área, sendo autodidata, estudando e 
 aprendendo por conta própria a fim de melhorar minhas habilidades de 
-desenvolvimento e programação. No momento estou aprendendo a desenvolver jogos
-multiplayer usando Photon Pun e Mirror Networking. No futuro pretendo começar a 
-aprender desenvolvimento de jogos em VR e AR para jogos em Unity. Recentemente 
-tenho aprendido Front-End para construir meu próprio portfólio.
+desenvolvimento e programação. 
+    Me considero uma pessoa que sempre foi apaixonada por jogos e gosto muito da ideia poder criar novos mundos
+interativos e gerar essa interação entre mundo digital e pessoas.
+    No momento tenho aprendido a desenvolver jogos multiplayer usando Photon Pun e Mirror Networking, e
+No futuro pretendo começar a aprender desenvolvimento de jogos em VR e AR também. Recentemente também comecei 
+a aprender Front-End para construir esse meu portfólio com identidade própria.
 
 - Inglês:
     I am a game developer who utilizes Unity 3D Game Engine and constantly 
