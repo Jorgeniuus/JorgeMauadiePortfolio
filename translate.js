@@ -17,13 +17,21 @@ let nameGameContentIframe;
 let flagTranaslateElements = document.querySelectorAll('.translateElement');
 
 $(".translateElement").on('touchstart click', function(event) {
-    flagTranaslateElements.forEach(element => {
-        let value = this.getAttribute('data-value');
-        if(element.getAttribute('data-value') == value){
-            TranslateConversion(value);
-        }
-    });
-    
+    if(event.type == "click"){
+        flagTranaslateElements.forEach(element => {
+            let value = this.getAttribute('data-value');
+            if(element.getAttribute('data-value') == value){
+                TranslateConversion(value);
+            }
+        });
+    }else if(event.type == "touchstart"){
+        flagTranaslateElements.forEach(element => {
+            let value = this.getAttribute('data-value');
+            if(element.getAttribute('data-value') == value){
+                TranslateConversion(value);
+            }
+        });
+    }
 });
 
 // let flagTranaslateElements = document.querySelectorAll('.translateElement');
