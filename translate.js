@@ -14,10 +14,21 @@ let iframeContentGames = document.getElementById('iframeContentGame');
 let currentTranslate;
 let nameGameContentIframe;
 
-
 let flagTranaslateElements = document.querySelectorAll('.translateElement');
+
+$(".translateElement").on('touchstart click', function(event) {
+    flagTranaslateElements.forEach(element => {
+        let value = this.getAttribute('data-value');
+        if(element.getAttribute('data-value') == value){
+            TranslateConversion(value);
+        }
+    });
+    
+});
+
+// let flagTranaslateElements = document.querySelectorAll('.translateElement');
 flagTranaslateElements.forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('touchstart', function() {
         let value = this.getAttribute('data-value');
         TranslateConversion(value);
     });
@@ -46,7 +57,7 @@ function Translation(languageSelected){
     resume.innerHTML = languageSelected.resume
 
     currentTranslate = languageSelected
-    setInterval(TranslateGameContentsInIframes, 3000);
+    // setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
