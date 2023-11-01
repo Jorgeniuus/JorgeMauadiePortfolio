@@ -66,23 +66,23 @@ function Translation(languageSelected){
 
     currentTranslate = languageSelected
 
-    setInterval(TranslateGameContentsInIframes, 3000);
+    // setInterval(TranslateGameContentsInIframes, 3000);
 }
-function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
-    let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
-    let innertext = innerDoc.querySelector('body section div p')
+// function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
+//     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
+//     let innertext = innerDoc.querySelector('body section div p')
 
-    nameGameContentIframe = whichGameContentIframeIs
+//     nameGameContentIframe = whichGameContentIframeIs
 
-    if(whichGameContentIframeIs == "shipdestroyer"){
-        innertext.innerHTML = currentTranslate.descriptionShipDestroyer
-    }
-    else if(whichGameContentIframeIs == "abeastoutside"){
-        innertext.innerHTML = currentTranslate.descriptionABeastOutside
-    }else{
-        innertext.innerHTML = currentTranslate.descriptionFPSMultiplayer
-    }
-}
+//     if(whichGameContentIframeIs == "shipdestroyer"){
+//         innertext.innerHTML = currentTranslate.descriptionShipDestroyer
+//     }
+//     else if(whichGameContentIframeIs == "abeastoutside"){
+//         innertext.innerHTML = currentTranslate.descriptionABeastOutside
+//     }else{
+//         innertext.innerHTML = currentTranslate.descriptionFPSMultiplayer
+//     }
+// }
 
 
 
