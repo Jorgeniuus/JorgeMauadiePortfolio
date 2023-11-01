@@ -51,7 +51,11 @@
             height: 200px;
         }
         div#contactme{
+            display: inline-block;
             text-align: center;
+            width: 100%;
+            padding-top: 10px;
+            /* background-color: blue; */
         }
 
 
@@ -61,22 +65,34 @@
             margin-right: 10px;
             margin-left: 10px; */
             margin: auto;
-            background-color: rgb(0, 255, 13);
+            /* background-color: rgb(0, 255, 13); */
         } 
         div ul#tecnologies li{
             display: inline-flex;
-            padding: 0;
-            background-color: rgb(0, 174, 255);
+            /* padding: 0; */
+            margin-left: 5px;
+            margin-bottom: 10px;
+            /* background-color: rgb(0, 174, 255); */
             text-align: center;
-            
         }
         div ul#tecnologies{
             display: block;
-            width: 30%;
+            width: 100%;
             height: 200px;
             margin: auto;
             text-align: center;
-            background-color: red;
+            /* background-color: red; */
+        }
+        ul#tecnologies .barTec p{
+            display: inline-flex;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(226, 226, 226);
+            color: black;
+        } 
+        ul#tecnologies .barTec{
+            width: 100%;
         }
 
 
@@ -94,22 +110,31 @@
         <div>
             <h1>Olá! meu nome é <b><span>Jorge Mauadie!</span></b></h1>
             <p> 
-                &nbsp; &nbsp; &nbsp;Tenho 30 anos e sou <b><span>Desenvolvedor Unity</span></b> de São João de Meriti - RJ. Iniciei no desenvolvimento de jogos em Janeiro de 2022 e busco sempre melhorar meus conhecimentos na área, sendo autodidata, estudando e 
-                aprendendo por conta própria a fim de melhorar minhas habilidades de desenvolvimento e programação. 
-                <br><br> &nbsp; &nbsp; &nbsp;Me considero uma pessoa apaixonada por jogos, desde os jogos mais antigos até os mais atuais. Sou uma pessoa muito criativa desde criança e gosto muito da ideia de poder criar novos mundos
-                interativos e ter essa interação entre pessoas e o mundo digital.
-                <br><br> &nbsp; &nbsp; &nbsp;No momento tenho aprendido a desenvolver jogos multiplayer usando <b>Photon Pun</b>e <b>Mirror Networking</b>, e
-                No futuro pretendo começar a aprender desenvolvimento de jogos em <b>VR</b> e <b>AR</b> também. Em Setembro de 2023 comecei 
-                a aprender <b>Front-End </b>para construir esse portfólio e ter meus projetos reunidos com minha própria identidade. 
+                &nbsp; &nbsp; &nbsp;I have 30 years old and I am a <b><span>Unity Developer</span></b> from Brazil. I started game development in January 2022 and I always seek to improve my knowledge in the area, being self-taught, studying and learning on my own in order to improve my development and programming skills.<br><br> &nbsp; &nbsp; &nbsp;I consider myself a person who is passionate about games, from the oldest games to the most current ones. I've been a very creative person since I was a child and I really like the idea of being able to create new interactive worlds and have this interaction between people and the digital world.<br><br> &nbsp; &nbsp; &nbsp;At the moment I have been learning how to develop multiplayer games using <b>Photon Pun</b> and <b>Mirror Networking</b>, and in the future I intend to start learning game development in <b>VR</b> and <b>AR</b> too. In September 2023 I started learning <b>Front-End</b> to build this portfolio and have my projects combined with my own identity." 
             </p>
         </div>
         <div>
             <ul id="tecnologies">                        
-                <li><img src="Imagens/Tecnologias/unittytec.png" alt="unity3D"></li>
-                <li><img src="Imagens/Tecnologias/csharptec.png" alt="C Sharp"></li>
-                <li><img src="Imagens/Tecnologias/jstec.png" alt="JavaScript"></li>
-                <li><img src="Imagens/Tecnologias/htmltec.png" alt="HTML"></li>
-                <li><img src="Imagens/Tecnologias/csstec.png" alt="CSS"></li>
+                <li>
+                    <img src="Imagens/Tecnologias/unittytec.png" alt="unity3D">
+                    <div class="barTec"><p>Experience 1 year</p></div>
+                </li>
+                <li>
+                    <img src="Imagens/Tecnologias/csharptec.png" alt="C Sharp">
+                    <div class="barTec"><p>Experience 1 year</p></div>
+                </li>
+                <li>
+                    <img src="Imagens/Tecnologias/jstec.png" alt="JavaScript">
+                    <div class="barTec"><p>Experience 1 year</p></div>
+                </li>
+                <li>
+                    <img src="Imagens/Tecnologias/htmltec.png" alt="HTML">
+                    <div class="barTec"><p>Experience 1 year</p></div>
+                </li>
+                <li>
+                    <img src="Imagens/Tecnologias/csstec.png" alt="CSS">
+                    <div class="barTec"><p>Experience 1 year</p></div>
+                </li>
             </ul>
         </div>
         <div id="contactme">

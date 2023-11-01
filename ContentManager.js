@@ -57,6 +57,13 @@ function SelectTypeContent(classContent){
             for(let j = 0; j < hidePreviewContents.length; j++){
                 hidePreviewContents[j].style.display = 'inline-block';
             }
+            if(typeProjectsName[i] === 'About Me'){
+                let iframeAboutMe = document.getElementById('iframeContentGame');
+                iframeAboutMe.style.display = 'inline-block';
+                iframeAboutMe.src = "aboutme.html";
+
+                ResponsiveIframePageLoaded()
+            }
         }else{
             if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home')
             for(let j = 0; j < hidePreviewContents.length; j++){
@@ -137,6 +144,7 @@ function TecnologiesTimeExperience(whichTecnologyIs){
     }
 }
 // TecnologiesTimeExperience(typeTecnology[0])
+
 //===================================== TRANSLATE ========================
 //menu
 let projects = document.querySelector('h1#titleprojects'); 
@@ -210,16 +218,22 @@ function Translation(languageSelected){
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
-    let innertext = innerDoc.querySelector('body section div p')
+    let innertextP = innerDoc.querySelector('body section div p')
+    let innertextH1 = innerDoc.querySelector('body section div h1')
+    let resume = innerDoc.querySelector('body section div a')
 
     nameGameContentIframe = whichGameContentIframeIs
 
     if(whichGameContentIframeIs == "shipdestroyer"){
-        innertext.innerHTML = currentTranslate.descriptionShipDestroyer
+        innertextP.innerHTML = currentTranslate.descriptionShipDestroyer
     }
     else if(whichGameContentIframeIs == "abeastoutside"){
-        innertext.innerHTML = currentTranslate.descriptionABeastOutside
+        innertextP.innerHTML = currentTranslate.descriptionABeastOutside
+    }else if(whichGameContentIframeIs ==  "aboutme"){
+        innertextH1.innerHTML = currentTranslate.aboutmedescriptionH1
+        innertextP.innerHTML = currentTranslate.aboutmedescriptionP
+        resume.innerHTML = currentTranslate.resume
     }else{
-        innertext.innerHTML = currentTranslate.descriptionFPSMultiplayer
+        innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
     }
 }
