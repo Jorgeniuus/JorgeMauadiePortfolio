@@ -65,7 +65,8 @@ function Translation(languageSelected){
     resume.innerHTML = languageSelected.resume
 
     currentTranslate = languageSelected
-    // setInterval(TranslateGameContentsInIframes, 3000);
+
+    setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;

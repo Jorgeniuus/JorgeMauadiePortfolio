@@ -17,18 +17,6 @@
 <body>
     <header>
         <div id="interfacemenu">
-            <!--LANGUAGES--> 
-            <div id="languages">
-                <ul>
-                    <li class="translateElement" data-value="1">
-                            <img src="Imagens/Languages/ptbrlanguage.png" alt="Idiom Portuguese">
-                    </li>
-                    <li class="translateElement" data-value="0" >
-                            <img src="Imagens/Languages/usaslanguage.png" alt="Idiom English">
-                    </li>
-                </ul>
-            </div>
-            <!--END LANGUAGES--> 
             <!--PROJECTS MENU--> 
             <nav class="flex" id="menu">
                 <div id="projectsmenu">
@@ -48,15 +36,15 @@
                     <section class="flex" id="content">
                         <div class="rolagem" id="content">
 
-                            <a href="Game Pages/shipdestroyer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('shipdestroyer')"><div class="previewcontent Home Mobile">
+                            <a href="Game Pages/shipdestroyer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('shipdestroyer', true)"><div class="previewcontent Home Mobile">
                                 <img src="Imagens/Jogos/Ship Destroyer/Foto Perfil Ship Destroyer original.png" alt="Preview Project">
                                 <h1>Ship Destroyer</h1>
                             </div></a>
-                            <a href="Game Pages/abeastoutside.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('abeastoutside')"><div class="previewcontent Home PC">
+                            <a href="Game Pages/abeastoutside.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('abeastoutside', true)"><div class="previewcontent Home PC">
                                 <img src="Imagens/Jogos/A Beast Outside/ProfilePhotoABO2.png" alt="Preview Project">
                                 <h1>A Beast Outside</h1>
                             </div></a>
-                            <a href="Game Pages/fpsmultiplayer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('fpsmultiplayer')"><div class="previewcontent Home PC Multiplayer">
+                            <a href="Game Pages/fpsmultiplayer.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('fpsmultiplayer', true)"><div class="previewcontent Home PC Multiplayer">
                                 <img src="Imagens/Jogos/FPS Multiplayer/ProfilephotoFPS2.png" alt="Preview Project">
                                 <h1>FPS Multiplayer</h1>
                             </div></a>
@@ -94,6 +82,20 @@
             </nav>
         </div>
     </header>
+
+    <!--LANGUAGES--> 
+    <div id="languages">
+        <ul>
+            <li class="translateElement" data-value="1">
+                    <img src="Imagens/Languages/ptbrlanguage.png" alt="Idiom Portuguese">
+            </li>
+            <li class="translateElement" data-value="0" >
+                    <img src="Imagens/Languages/usaslanguage.png" alt="Idiom English">
+            </li>
+        </ul>
+    </div>
+    <!--END LANGUAGES-->
+     
     <script src="ContentManager.js"></script>
     <script src="Translate.js"></script>
 </body>
