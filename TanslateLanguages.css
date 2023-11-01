@@ -11,12 +11,10 @@
         /* background-color: rgb(0, 255, 128); */
     }
     div#languages ul li{
-        width: 40px;
-        height: 40px;
         list-style: none;
         transition: 0.3s;
         cursor: pointer;
-        background-color: rgb(0, 26, 255);
+        /* background-color: rgb(0, 26, 255); */
     }
     div#languages ul li:hover{
         transform: scale(1.25);
@@ -39,12 +37,10 @@
         /* background-color: rgb(0, 255, 128); */
     }
     div#languages ul li{
-        width: 40px;
-        height: 40px;
         list-style: none;
         transition: 0.3s;
         cursor: pointer;
-        background-color: rgb(0, 26, 255);
+        /* background-color: rgb(0, 26, 255); */
     }
     div#languages ul li:hover{
         transform: scale(1.25);
