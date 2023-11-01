@@ -36,4 +36,6 @@ Mirror Networking. In the future I intend starting learn VR and AR development f
 games in unity. Recently I have been learning front-end to build my own portfolio. 
 
 =====================================================================================================
+- conta email e whatsapp na tela incial
+- Desenvolvedor Unity
 */
