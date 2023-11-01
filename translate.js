@@ -27,12 +27,12 @@ $(".translateElement").on('touchstart click', function(event) {
 });
 
 // let flagTranaslateElements = document.querySelectorAll('.translateElement');
-flagTranaslateElements.forEach(element => {
-    element.addEventListener('touchstart', function() {
-        let value = this.getAttribute('data-value');
-        TranslateConversion(value);
-    });
-});
+// flagTranaslateElements.forEach(element => {
+//     element.addEventListener('touchstart', function() {
+//         let value = this.getAttribute('data-value');
+//         TranslateConversion(value);
+//     });
+// });
 
 TranslateConversion()
 function TranslateConversion(idLanguage = 0){ 
