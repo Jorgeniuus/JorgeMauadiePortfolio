@@ -243,6 +243,12 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
 
+    innerDoc.onload = function() {
+        const body = iframe.contentDocument.body;
+        const height = body.scrollHeight;
+        iframe.style.height = height + 'px';
+    }
+    
     nameGameContentIframe = whichGameContentIframeIs
 
     if(whichGameContentIframeIs == "shipdestroyer"){
@@ -255,12 +261,6 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
         contactmePhone.innerHTML = currentTranslate.contactme
         resumeAboutMe.innerHTML = currentTranslate.resume
-
-        innerDoc.onload = function() {
-            const body = iframe.contentDocument.body;
-            const height = body.scrollHeight;
-            iframe.style.height = height + 'px';
-        }
 
         udityFrontDescription.forEach(tec =>{
             if(tec.getAttribute('data-value') == 'unity'){
