@@ -10,6 +10,13 @@ let currentDay = currentDate.getDay()
 let currentMonth = currentDate.getMonth()
 let currentYear = currentDate.getFullYear()
 
+//variables experience translated
+let yearExp;
+let yearMonthExp;
+let monthExp;
+let moreAMonthExp;
+let lessAMonthExp;
+
 MenuSelect()
 
 function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
@@ -113,17 +120,16 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                returnExperienceUnity = `${yearsDifference} ano de experiêcia` 
+                returnExperienceUnity = `${yearsDifference} ${yearExp}`//ano de experiêcia` 
             }else {
-                returnExperienceUnity = `${yearsDifference}.${monthsDifference} anos de experiêcia`
-            } 
-  
+                returnExperienceUnity = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`//anos de experiêcia`
+            }  
         }else if(monthsDifference >= 1){
-            returnExperienceUnity = `${monthsDifference} mês de experiêcia` 
+            returnExperienceUnity = `${monthsDifference} ${monthExp}`//mês de experiêcia` 
         }else if(monthsDifference > 1){
-            returnExperienceUnity = `${monthsDifference} meses de experiêcia` 
+            returnExperienceUnity = `${monthsDifference} ${moreAMonthExp}`//meses de experiêcia` 
         }else {
-            returnExperienceUnity = `Menos de 1 mês de experiêcia`
+            returnExperienceUnity = `${lessAMonthExp}`//Menos de 1 mês de experiêcia`
         }
         return returnExperienceUnity
     }else{
@@ -138,17 +144,23 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                returnExperienceFront = `${yearsDifference} ano de experiêcia` 
+                returnExperienceFront = `${yearsDifference} ${yearExp}`//ano de experiêcia` 
             }else {
-                returnExperienceFront = `${yearsDifference}.${monthsDifference} anos de experiêcia`
+                returnExperienceFront = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`//anos de experiêcia`
             }  
         }else if(monthsDifference == 1){
-            returnExperienceFront = `${monthsDifference} mês de experiêcia` 
+            returnExperienceFront = `${monthsDifference} ${monthExp}`//mês de experiêcia` 
         }else if(monthsDifference > 1){
-            returnExperienceFront = `${monthsDifference} meses de experiêcia` 
+            returnExperienceFront = `${monthsDifference} ${moreAMonthExp}`//meses de experiêcia` 
         }else {
-            returnExperienceFront = `Menos de 1 mês de experiêcia`
+            returnExperienceFront = `${lessAMonthExp}`//Menos de 1 mês de experiêcia`
         }
+        // ${yearExp}
+        // ${yearMonthExp}
+        // ${monthExp}
+        // ${moreAMonthExp}
+        // ${lessAMonthExp}
+
         return returnExperienceFront
     }
 }
@@ -215,11 +227,15 @@ function Translation(languageSelected){
     home.innerHTML = languageSelected.home
     multiplayer.innerHTML = languageSelected.multiplayer
     aboutme.innerHTML = languageSelected.aboutme
-
     resumeFront.innerHTML = languageSelected.resume
 
-    currentTranslate = languageSelected
+    yearExp = languageSelected.year
+    yearMonthExp = languageSelected.yearAndMonth
+    monthExp = languageSelected.amonth
+    moreAMonthExp = languageSelected.moreMonths
+    lessAMonthExp = languageSelected.lessAMonth
 
+    currentTranslate = languageSelected
     setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
