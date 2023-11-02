@@ -4,104 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         *{
             /* background-color: rgb(175, 175, 175); */
             background-color: rgb(38, 36, 44);
         }
         section{
+            display: block;
+            width: 90%;
             margin: auto;
         }
-        h1{
-            font-size: 250%;
-            margin-bottom: 10px;
-            text-align: center;
-            color: white;
-        }
-        b span{
-            color: rgb(255, 123, 0);
+        div#resumecape{
+            background-color: rgb(0, 0, 0);
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+            border-top-right-radius: 20%;
+            margin: auto;
+            box-shadow: 3px 3px 5px rgb(255, 123, 0);
         }
         a{
-            color: rgb(0, 47, 255);
-        }
-        p{
-            font-size: 150%;
-            color: white;
-        }
-        img#photo{
-            width: 300px;
             display: block;
-            margin: auto;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+            border-top-right-radius: 20%;
         }
-        .photo{
-            width: 48%;
-            padding-top: 3px;
-            padding-right: 5px;
-            cursor: pointer;
-            transition: 0.3s;
+        i#phone{
+            color: rgb(3, 196, 3);
         }
-        .photo:active{
-            transform: scale(2);
+        i#email{
+            color: rgb(255, 123, 0);;
         }
-        .divsamplephoto{
-            display: inline-table;
-            text-align: center;
+        h2{
+            color: rgb(0, 0, 0);
+            text-decoration: underline 2px rgb(0, 0, 0);
+            font-size: 40px;
         }
-        div#space{
-            height: 200px;
-        }
-        div#contactme{
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            padding-top: 10px;
-            /* background-color: blue; */
-        }
-
-
-        div ul#tecnologies li img{
-            width: 50px;
-            /* margin-bottom: 20px;
-            margin-right: 10px;
-            margin-left: 10px; */
-            margin: auto;
-            /* background-color: rgb(0, 255, 13); */
-        } 
-        div ul#tecnologies li{
-            display: inline-flex;
-            /* padding: 0; */
-            margin-left: 5px;
-            margin-bottom: 10px;
-            /* background-color: rgb(0, 174, 255); */
-            text-align: center;
-        }
-        div ul#tecnologies{
-            display: block;
-            width: 100%;
-            height: 200px;
-            margin: auto;
-            text-align: center;
-            /* background-color: red; */
-        }
-        ul#tecnologies .barTec p{
-            display: inline-flex;
-            width: 100%;
-            height: 40px;
-            text-align: center;
-            background-color: rgb(226, 226, 226);
-            color: black;
-        } 
-        ul#tecnologies .barTec{
-            width: 100%;
-        }
-
-
-
         @media screen and (min-width: 1024px){
-
+            h1{
+                font-size: 250%;
+                margin-bottom: 10px;
+                text-align: center;
+                color: white;
+            }
+            p{
+                font-size: 150%;
+                color: white;
+            }
+            b span{
+                color: rgb(255, 123, 0);
+            }
+            div#space{
+                height: 200px;
+            }
+            div#contactme{
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                padding-top: 10px;
+            }
+            div ul#tecnologies li img{
+                width: 50px;
+                margin: auto;
+            } 
+            div ul#tecnologies li{
+                display: inline-flex;
+                margin-left: 5px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            div ul#tecnologies{
+                display: block;
+                width: 80%;
+                height: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            ul#tecnologies .barTec p{
+                display: inline-flex;
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                background-color: rgb(226, 226, 226);
+                color: black;
+            } 
+            ul#tecnologies .barTec{
+                width: 100%;
+            }
         }
         @media screen and (max-width: 1024px){
-
+            h1{
+                font-size: 250%;
+                margin-bottom: 10px;
+                text-align: center;
+                color: white;
+            }
+            p{
+                font-size: 150%;
+                color: white;
+            }
+            b span{
+                color: rgb(255, 123, 0);
+            }
+            div#space{
+                height: 200px;
+            }
+            div#contactme{
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                padding-top: 10px;
+            }
+            div ul#tecnologies li img{
+                width: 50px;
+                margin: auto;
+            } 
+            div ul#tecnologies li{
+                display: inline-flex;
+                /* width: 35%; */
+                margin-left: 5px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            div ul#tecnologies{
+                display: block;
+                width: 80%;
+                height: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            ul#tecnologies .barTec p{
+                display: inline-flex;
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                background-color: rgb(226, 226, 226);
+                color: black;
+            } 
+            ul#tecnologies .barTec{
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -138,9 +188,12 @@
             </ul>
         </div>
         <div id="contactme">
-            <p>E-mail: jorgemauadie@gmail.com</p>
-            <p>Whatsapp: 55 021 96457-5248</p>
-            <a class="resume" id="resumeaboutme" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>
+            <h2>Contact me:</h2>
+            <p><i class="bi bi-envelope-at-fill" id="email"></i> jorgemauadie@gmail.com</p>
+            <p><i class="bi bi-whatsapp" id="phone"></i> 55 021 96457-5248</p>
+            <div id="resumecape">
+                <a class="resume" id="resumeaboutme" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>
+            </div>   
         </div> 
         <div id="space"></div>
     </section>

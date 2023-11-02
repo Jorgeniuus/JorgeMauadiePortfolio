@@ -221,6 +221,7 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     let innertextP = innerDoc.querySelector('body section div p')
     let innertextH1 = innerDoc.querySelector('body section div h1')
     let resume = innerDoc.querySelector('body section div a')
+    let contactme = innerDoc.querySelector('body section div h2')
 
     nameGameContentIframe = whichGameContentIframeIs
 
@@ -232,6 +233,7 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     }else if(whichGameContentIframeIs ==  "aboutme"){
         innertextH1.innerHTML = currentTranslate.aboutmedescriptionH1
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
+        contactme.innerHTML = currentTranslate.contactme
         resume.innerHTML = currentTranslate.resume
     }else{
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
