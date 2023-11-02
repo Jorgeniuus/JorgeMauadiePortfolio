@@ -214,6 +214,17 @@ header{
     }
     i#email{
         color: rgb(255, 123, 0);
+        text-decoration: none;
+    }
+    a.contactClick{
+        color: white;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+    a.contactClick:hover{
+        color: rgb(255, 123, 0);
+        text-decoration: none;
+        font-weight: bolder;
     }
     h2{
         color: rgb(0, 0, 0);
@@ -327,6 +338,17 @@ header{
     .contacts{
         margin: 10px;
         font-size: 18px;
+    }
+
+    a.contactClick{
+        color: white;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+    a.contactClick:hover{
+        color: rgb(255, 123, 0);
+        text-decoration: none;
+        font-weight: bolder;
     }
 }
 

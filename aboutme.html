@@ -50,6 +50,7 @@
                 height: 100%;
                 margin: auto;
                 text-align: center;
+
             } 
             
             
@@ -76,7 +77,7 @@
                 margin: auto;
                 box-shadow: 3px 3px 5px rgb(255, 123, 0);
             }
-            a{
+            a.resume{
                 display: block;
                 background-color: rgb(0, 0, 0);
                 text-decoration: none;
@@ -90,6 +91,7 @@
                 display: inline-block;
                 text-align: center;
                 width: 100%;
+                height: 100%;
                 padding-top: 10px;
             }
             i#phone{
@@ -102,6 +104,17 @@
                 color: rgb(0, 0, 0);
                 text-decoration: underline 2px rgb(0, 0, 0);
                 font-size: 40px;
+            }
+
+            a.contactClick{
+                color: white;
+                text-decoration: none;
+                font-weight: lighter;
+            }
+            a.contactClick:hover{
+                color: rgb(255, 123, 0);
+                text-decoration: none;
+                font-weight: bolder;
             }
         }
         @media screen and (max-width: 1024px){
@@ -138,7 +151,7 @@
                 height: 100%;
                 margin: auto;
                 text-align: center;
-            }
+            } 
             ul#tecnologies .barTec p{
                 display: inline-flex;
                 width: 100%;
@@ -162,7 +175,7 @@
                 margin: auto;
                 box-shadow: 3px 3px 5px rgb(255, 123, 0);
             }
-            a{
+            a.resume{
                 display: block;
                 background-color: rgb(0, 0, 0);
                 text-decoration: none;
@@ -176,6 +189,7 @@
                 display: inline-block;
                 text-align: center;
                 width: 100%;
+                height: 100%;
                 padding-top: 10px;
             }
             i#phone{
@@ -188,6 +202,16 @@
                 color: rgb(0, 0, 0);
                 text-decoration: underline 2px rgb(0, 0, 0);
                 font-size: 40px;
+            }
+            a.contactClick{
+                color: white;
+                text-decoration: none;
+                font-weight: lighter;
+            }
+            a.contactClick:hover{
+                color: rgb(255, 123, 0);
+                text-decoration: none;
+                font-weight: bolder;
             }
         }
     </style>
@@ -227,9 +251,8 @@
         </div>
         <div id="contactme">
             <h2>Contact me:</h2>
-            <!-- <p class="contacts"><i class="bi bi-envelope-at-fill" id="email"></i><a href="mailto:jorgemauadie@gmail.com">jorgemauadie@gmail.com</a></p> -->
-            <p><i class="bi bi-envelope-at-fill" id="email"></i> jorgemauadie@gmail.com</p>
-            <p><i class="bi bi-whatsapp" id="phone"></i> 55 21 96457-5248</p>
+            <p class="contacts"><i class="bi bi-envelope-at-fill" id="email"></i><a href="mailto:jorgemauadie@gmail.com" class="contactClick"> jorgemauadie@gmail.com</a></p>
+            <p><i class="bi bi-whatsapp" id="phone"></i><a href="https://wa.me/55 21 96457-5248" target="_blank" class="contactClick"> 55 21 96457-5248</p>  
             <div id="resumecape">
                 <a class="resume" id="resumeaboutme" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>
             </div>   

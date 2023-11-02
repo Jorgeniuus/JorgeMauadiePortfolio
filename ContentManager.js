@@ -155,12 +155,6 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         }else {
             returnExperienceFront = `${lessAMonthExp}`//Menos de 1 mês de experiêcia`
         }
-        // ${yearExp}
-        // ${yearMonthExp}
-        // ${monthExp}
-        // ${moreAMonthExp}
-        // ${lessAMonthExp}
-
         return returnExperienceFront
     }
 }
@@ -239,10 +233,12 @@ function Translation(languageSelected){
     setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
+    ResponsiveIframePageLoaded()
+
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
     let innertextP = innerDoc.querySelector('body section div p')
     let innertextH1 = innerDoc.querySelector('body section div h1')
-    let resumeAboutMe = innerDoc.querySelector('body section div a')
+    let resumeAboutMe = innerDoc.querySelector('body section div a.resume')
     let contactmePhone = innerDoc.querySelector('body section div h2')
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
