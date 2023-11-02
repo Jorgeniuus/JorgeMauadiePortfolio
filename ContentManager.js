@@ -98,6 +98,9 @@ function ResponsiveIframePageLoaded(){
 
 //ANOS DE EXPERIÊNCIA
 function TecnologiesTimeExperience(whichTecnologyIs){
+    let returnExperienceUnity;
+    let returnExperienceFront;
+
     if(whichTecnologyIs == typeTecnology[0]){
         let finalDate = new Date(currentYear, currentMonth+1, currentDay+1); 
         
@@ -110,16 +113,19 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                alert(`${yearsDifference} ano de experiêcia`); 
+                returnExperienceUnity = `${yearsDifference} ano de experiêcia` 
             }else {
-                alert(`${yearsDifference}.${monthsDifference} anos de experiêcia`);
+                returnExperienceUnity = `${yearsDifference}.${monthsDifference} anos de experiêcia`
             } 
   
         }else if(monthsDifference >= 1){
-            alert(`${monthsDifference} mês de experiêcia`); 
-        }else{
-            alert(`Menos de 1 mês de experiêcia`); 
+            returnExperienceUnity = `${monthsDifference} mês de experiêcia` 
+        }else if(monthsDifference > 1){
+            returnExperienceUnity = `${monthsDifference} meses de experiêcia` 
+        }else {
+            returnExperienceUnity = `Menos de 1 mês de experiêcia`
         }
+        return returnExperienceUnity
     }else{
         let finalDate = new Date(currentYear, currentMonth+1, currentDay+1); 
         
@@ -132,15 +138,18 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                alert(`${yearsDifference} ano de experiêcia`); 
+                returnExperienceFront = `${yearsDifference} ano de experiêcia` 
             }else {
-                alert(`${yearsDifference}.${monthsDifference} anos de experiêcia`);
+                returnExperienceFront = `${yearsDifference}.${monthsDifference} anos de experiêcia`
             }  
-        }else if(monthsDifference >= 1){
-            alert(`${monthsDifference} mês de experiêcia`); 
-        }else{
-            alert(`Menos de 1 mês de experiêcia`); 
+        }else if(monthsDifference == 1){
+            returnExperienceFront = `${monthsDifference} mês de experiêcia` 
+        }else if(monthsDifference > 1){
+            returnExperienceFront = `${monthsDifference} meses de experiêcia` 
+        }else {
+            returnExperienceFront = `Menos de 1 mês de experiêcia`
         }
+        return returnExperienceFront
     }
 }
 // TecnologiesTimeExperience(typeTecnology[0])
@@ -152,12 +161,9 @@ let home = document.querySelector('li#home');
 let multiplayer = document.querySelector('li#multiplayer');
 let aboutme = document.querySelector('li#aboutme');
 // //resume
-let resume = document.querySelector('.resume');
+let resumeFront = document.querySelector('.resume');
 //game descriptions
 let iframeContentGames = document.getElementById('iframeContentGame');
-// //tecnology descrriptions
-// let udityDescription = document.querySelector(''); //estao em falta
-// let frontEndDescription = document.querySelector('');
 
 let currentTranslate;
 let nameGameContentIframe;
@@ -210,7 +216,7 @@ function Translation(languageSelected){
     multiplayer.innerHTML = languageSelected.multiplayer
     aboutme.innerHTML = languageSelected.aboutme
 
-    resume.innerHTML = languageSelected.resume
+    resumeFront.innerHTML = languageSelected.resume
 
     currentTranslate = languageSelected
 
@@ -220,8 +226,10 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
     let innertextP = innerDoc.querySelector('body section div p')
     let innertextH1 = innerDoc.querySelector('body section div h1')
-    let resume = innerDoc.querySelector('body section div a')
-    let contactme = innerDoc.querySelector('body section div h2')
+    let resumeAboutMe = innerDoc.querySelector('body section div a')
+    let contactmePhone = innerDoc.querySelector('body section div h2')
+    //tecnology descriptions
+    let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
 
     nameGameContentIframe = whichGameContentIframeIs
 
@@ -233,8 +241,16 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     }else if(whichGameContentIframeIs ==  "aboutme"){
         innertextH1.innerHTML = currentTranslate.aboutmedescriptionH1
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
-        contactme.innerHTML = currentTranslate.contactme
-        resume.innerHTML = currentTranslate.resume
+        contactmePhone.innerHTML = currentTranslate.contactme
+        resumeAboutMe.innerHTML = currentTranslate.resume
+
+        udityFrontDescription.forEach(tec =>{
+            if(tec.getAttribute('data-value') == 'unity'){
+                tec.innerHTML = TecnologiesTimeExperience(typeTecnology[0])
+            }else{
+                tec.innerHTML = TecnologiesTimeExperience(typeTecnology[1])
+            }
+        })
     }else{
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
     }

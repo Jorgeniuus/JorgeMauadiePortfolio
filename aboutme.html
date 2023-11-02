@@ -14,39 +14,7 @@
             display: block;
             width: 90%;
             margin: auto;
-        }
-        div#resumecape{
-            background-color: rgb(0, 0, 0);
-            width: 200px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-top-left-radius: 20%;
-            border-bottom-right-radius: 20%;
-            border-bottom-left-radius: 20%;
-            border-top-right-radius: 20%;
-            margin: auto;
-            box-shadow: 3px 3px 5px rgb(255, 123, 0);
-        }
-        a{
-            display: block;
-            background-color: rgb(0, 0, 0);
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            border-top-left-radius: 20%;
-            border-bottom-right-radius: 20%;
-            border-bottom-left-radius: 20%;
-            border-top-right-radius: 20%;
-        }
-        i#phone{
-            color: rgb(3, 196, 3);
-        }
-        i#email{
-            color: rgb(255, 123, 0);;
-        }
-        h2{
-            color: rgb(0, 0, 0);
-            text-decoration: underline 2px rgb(0, 0, 0);
-            font-size: 40px;
+            height: 100%;
         }
         @media screen and (min-width: 1024px){
             h1{
@@ -98,6 +66,39 @@
             } 
             ul#tecnologies .barTec{
                 width: 100%;
+            }
+            div#resumecape{
+                background-color: rgb(0, 0, 0);
+                width: 200px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 20%;
+                margin: auto;
+                box-shadow: 3px 3px 5px rgb(255, 123, 0);
+            }
+            a{
+                display: block;
+                background-color: rgb(0, 0, 0);
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            i#phone{
+                color: rgb(3, 196, 3);
+            }
+            i#email{
+                color: rgb(255, 123, 0);
+            }
+            h2{
+                color: rgb(0, 0, 0);
+                text-decoration: underline 2px rgb(0, 0, 0);
+                font-size: 40px;
             }
         }
         @media screen and (max-width: 1024px){
@@ -152,38 +153,71 @@
             ul#tecnologies .barTec{
                 width: 100%;
             }
+            div#resumecape{
+                background-color: rgb(0, 0, 0);
+                width: 200px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 20%;
+                margin: auto;
+                box-shadow: 3px 3px 5px rgb(255, 123, 0);
+            }
+            a{
+                display: block;
+                background-color: rgb(0, 0, 0);
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            i#phone{
+                color: rgb(3, 196, 3);
+            }
+            i#email{
+                color: rgb(255, 123, 0);
+            }
+            h2{
+                color: rgb(0, 0, 0);
+                text-decoration: underline 2px rgb(0, 0, 0);
+                font-size: 40px;
+            }
         }
     </style>
 </head>
 <body >
     <section>
         <div>
-            <h1>Olá! meu nome é <b><span>Jorge Mauadie!</span></b></h1>
+            <h1>Hello! my name is <b><span>Jorge Mauadie!</span></b></h1>
             <p> 
                 &nbsp; &nbsp; &nbsp;I have 30 years old and I am a <b><span>Unity Developer</span></b> from Brazil. I started game development in January 2022 and I always seek to improve my knowledge in the area, being self-taught, studying and learning on my own in order to improve my development and programming skills.<br><br> &nbsp; &nbsp; &nbsp;I consider myself a person who is passionate about games, from the oldest games to the most current ones. I've been a very creative person since I was a child and I really like the idea of being able to create new interactive worlds and have this interaction between people and the digital world.<br><br> &nbsp; &nbsp; &nbsp;At the moment I have been learning how to develop multiplayer games using <b>Photon Pun</b> and <b>Mirror Networking</b>, and in the future I intend to start learning game development in <b>VR</b> and <b>AR</b> too. In September 2023 I started learning <b>Front-End</b> to build this portfolio and have my projects combined with my own identity." 
             </p>
         </div>
-        <div>
+        <div id="experienceTec">
             <ul id="tecnologies">                        
                 <li>
                     <img src="Imagens/Tecnologias/unittytec.png" alt="unity3D">
-                    <div class="barTec"><p>Experience 1 year</p></div>
+                    <div class="barTec"><p data-value="unity">Experience 1 year</p></div>
                 </li>
                 <li>
                     <img src="Imagens/Tecnologias/csharptec.png" alt="C Sharp">
-                    <div class="barTec"><p>Experience 1 year</p></div>
+                    <div class="barTec"><p data-value="unity">Experience 1 year</p></div>
                 </li>
                 <li>
                     <img src="Imagens/Tecnologias/jstec.png" alt="JavaScript">
-                    <div class="barTec"><p>Experience 1 year</p></div>
+                    <div class="barTec"><p data-value="frontend">Experience 1 year</p></div>
                 </li>
                 <li>
                     <img src="Imagens/Tecnologias/htmltec.png" alt="HTML">
-                    <div class="barTec"><p>Experience 1 year</p></div>
+                    <div class="barTec"><p data-value="frontend">Experience 1 year</p></div>
                 </li>
                 <li>
                     <img src="Imagens/Tecnologias/csstec.png" alt="CSS">
-                    <div class="barTec"><p>Experience 1 year</p></div>
+                    <div class="barTec"><p data-value="frontend">Experience 1 year</p></div>
                 </li>
             </ul>
         </div>
