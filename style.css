@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font: normal;
 }
-body{
+body{ 
     background-color: rgb(0, 0, 0);
     height: 100vh;
 }
@@ -32,7 +32,7 @@ body{
 }
 /*=====>>> HEADER <<<=====*/
 header{
-    padding-top: 100px;
+    padding-top: 50px;
     min-width: 516px;
     max-width: 1540px;
     height: 720px;
@@ -74,37 +74,38 @@ header{
 } 
 @media screen and (max-width: 1024px){
     h1#titleprojects{
-        margin-top: 20px;
+        margin-top: auto;
         margin-left: 10px;
         margin-right: 10px;
+        font-size: 20px;
     }
     div#projectsmenu{
         display: block;
         background-color: rgb(38, 36, 44);
         width: 100%;
-        height: 70px;
+        /* height: 70px; */
+        height: 100%;
         text-align: center;
-        /* padding-bottom: 50px; */
         color: rgb(255, 123, 0);
         display: inline-flex;
     }
-    header nav div#projectsmenu ul{
-        display: block;
+    header nav div#projectsmenu ul{ 
+        display: inline-block;
         text-align: center;
         list-style-type: none;
-        width: 80%;
-        height: 70px;
+        width: 70%;
+        height: 100%;
+        /* background-color: red; */
     }
-    header nav div#projectsmenu ul li{
-        margin-top: 20px;
-        margin-left: 5px;
+    header nav div#projectsmenu ul li{ 
+        display: inline-block;
+        margin: 5px;
         padding: 8px;
         color: rgb(231, 231, 231);
         cursor: pointer;
         transition: 0.3s;
         font-size: 12px;
-        display: inline-flex;
-        /* background-color: red; */
+        /* background-color: green; */
     }
     header nav div#projectsmenu ul li:hover{
         color: rgb(0, 0, 0);
@@ -154,7 +155,7 @@ header{
     }
     header nav div#about ul li{
         color: white;
-        padding: 5% 15%;
+        padding: 1% 15%;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -169,23 +170,18 @@ header{
 
 
     header nav div#about ul#tecnologies li img{
-        width: 50px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
-        /* background-color: rgb(0, 255, 13); */
+        width: 45px;
     } 
     header nav div#about ul#tecnologies li{
         display: inline-flex;
         padding: 0;
-        /* background-color: rgb(0, 174, 255); */
+        margin: 5px;
     }
     header nav div#about ul#tecnologies{
         display: block;
-        width: 90%;
-        height: 200px;
+        width: 80%;
+        height: 140px;
         text-align: center;
-        /* background-color: red; */
     }
 
 
@@ -198,15 +194,36 @@ header{
         color: black;
         transform: scale(1.25);
     }
+
+
     .resume{
         display: flex;
         list-style-type: none;
-        padding: 3%;
-        margin-top: 1%;
+        padding: 2%;
         display: block;
         text-align: center;
         color: rgb(30, 255, 0);
     } 
+    div#contactme{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    i#phone{
+        color: rgb(3, 196, 3);
+    }
+    i#email{
+        color: rgb(255, 123, 0);
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        text-decoration: underline 2px rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    .contacts{
+        margin: 10px;
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 1023px){
     div#about{
@@ -253,34 +270,33 @@ header{
     header nav div#about ul#socialmedia i{
         font-size: 30px;
     }
-
-
-    header nav div#about ul#tecnologies li img{
-        display: block;
-        width: 35px;
-        margin: 2px;
-        margin-bottom: -5px;
-        margin-top: -5px;
-    } 
-    header nav div#about ul#tecnologies{
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 40%; 
-    } 
     header nav div#about ul{
         display: inline-flex;
         list-style-type: none;
         padding: 5% 6%;
         display: block;
         text-align: center;
+    } 
+    header nav div#about ul#tecnologies li img{
+        width: 35px;
+    }  
+    header nav div#about ul#tecnologies li{
+        display: inline-flex;
+        margin: auto;
+        margin: 5px;
     }
-
-
+    header nav div#about ul#tecnologies{
+        display: block;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+    }
     header nav div#about ul li.interact:hover{
         color: black;
         transform: scale(1.25);
     }
+
+
     .resume{
         display: block;
         width: 200px;
@@ -292,6 +308,26 @@ header{
         margin-bottom: 10px;
         color: rgb(30, 255, 0);
     } 
+    div#contactme{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    i#phone{
+        color: rgb(3, 196, 3);
+    }
+    i#email{
+        color: rgb(255, 123, 0);
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        text-decoration: underline 2px rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    .contacts{
+        margin: 10px;
+        font-size: 18px;
+    }
 }
 
 i{
