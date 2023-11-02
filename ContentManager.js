@@ -168,6 +168,7 @@ let multiplayer = document.querySelector('li#multiplayer');
 let aboutme = document.querySelector('li#aboutme');
 // //resume
 let resumeFront = document.querySelector('.resume');
+let contactmeAboutFront = document.querySelector('h2.contactme')
 //game descriptions
 let iframeContentGames = document.getElementById('iframeContentGame');
 
@@ -228,18 +229,17 @@ function Translation(languageSelected){
     monthExp = languageSelected.amonth
     moreAMonthExp = languageSelected.moreMonths
     lessAMonthExp = languageSelected.lessAMonth
+    contactmeAboutFront.innerHTML = languageSelected.contactme
 
     currentTranslate = languageSelected
     setInterval(TranslateGameContentsInIframes, 3000);
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
-    ResponsiveIframePageLoaded()
-
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
     let innertextP = innerDoc.querySelector('body section div p')
     let innertextH1 = innerDoc.querySelector('body section div h1')
     let resumeAboutMe = innerDoc.querySelector('body section div a.resume')
-    let contactmePhone = innerDoc.querySelector('body section div h2')
+    let contactmePhone = innerDoc.querySelector('body section div h2.contactme')
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
 
@@ -255,6 +255,12 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
         contactmePhone.innerHTML = currentTranslate.contactme
         resumeAboutMe.innerHTML = currentTranslate.resume
+
+        innerDoc.onload = function() {
+            const body = iframe.contentDocument.body;
+            const height = body.scrollHeight;
+            iframe.style.height = height + 'px';
+        }
 
         udityFrontDescription.forEach(tec =>{
             if(tec.getAttribute('data-value') == 'unity'){

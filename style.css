@@ -211,6 +211,9 @@ header{
     }
     i#phone{
         color: rgb(3, 196, 3);
+        display: inline-block;
+        color: rgb(3, 196, 3);
+        margin-top: 10px;
     }
     i#email{
         color: rgb(255, 123, 0);
@@ -325,7 +328,9 @@ header{
         width: 100%;
     }
     i#phone{
+        display: inline-block;
         color: rgb(3, 196, 3);
+        margin-top: 10px;
     }
     i#email{
         color: rgb(255, 123, 0);
