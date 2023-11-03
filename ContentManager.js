@@ -176,7 +176,6 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         return returnExperienceFront
     }
 }
-// TecnologiesTimeExperience(typeTecnology[0])
 
 //===================================== TRANSLATE ========================
 //menu
@@ -212,14 +211,6 @@ $(".translateElement").on('touchstart click', function(event) {
         });
     }
 });
-
-// let flagTranaslateElements = document.querySelectorAll('.translateElement');
-// flagTranaslateElements.forEach(element => {
-//     element.addEventListener('touchstart', function() {
-//         let value = this.getAttribute('data-value');
-//         TranslateConversion(value);
-//     });
-// });
 
 TranslateConversion()
 function TranslateConversion(idLanguage = 0){ 
@@ -290,7 +281,7 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
                 tec.innerHTML = TecnologiesTimeExperience(typeTecnology[1])
             }
         })
-    }else{
+    }else if(whichGameContentIframeIs ==  "fpsmultiplayer"){
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
     }
 }
