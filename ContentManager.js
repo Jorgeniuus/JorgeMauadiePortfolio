@@ -33,7 +33,7 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
                 buttonSelect[i].style.transform = 'scale(1.5)';    
             }else{
                 buttonSelect[i].style.backgroundColor =  '';
-                buttonSelect[i].style.color =  'rgb(255, 255, 255)';
+                buttonSelect[i].style.color =  '';
                 buttonSelect[i].style.fontSize = '12px';
                 buttonSelect[i].style.transform = 'scale(1.2)';
             }
@@ -41,14 +41,16 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
     } else {
         for(let i = 0; i < buttonSelect.length; i++){
             if(i == itemMenuSelected){
-                buttonSelect[i].style.backgroundColor =  'rgb(231, 231, 231)';
+                buttonSelect[i].style.backgroundColor =  '#B4C5D1';
+                buttonSelect[i].style.boxShadow = "1px 1px 5px #0D171F";
                 buttonSelect[i].style.color =  'rgb(0, 0, 0)';
                 buttonSelect[i].style.padding = '15% 30%'
                 buttonSelect[i].style.fontSize = '12px';
                 buttonSelect[i].style.transform = 'scale(1.2)';
             }else{
                 buttonSelect[i].style.backgroundColor =  '';
-                buttonSelect[i].style.color =  'rgb(255, 255, 255)';
+                buttonSelect[i].style.boxShadow = "";
+                buttonSelect[i].style.color =  '#F1F4F7';
                 buttonSelect[i].style.padding = '15% 15%'
                 buttonSelect[i].style.fontSize = '12px';
                 buttonSelect[i].style.transform = 'scale(1.2)';
@@ -244,11 +246,11 @@ function Translation(languageSelected){
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
-    let innertextP = innerDoc.querySelector('body section div p')
+    let innertextP = innerDoc.querySelector('body section div p#description')
     let innertextWelcomeH1 = innerDoc.querySelector('body section div h1')
-    let innertextPresentationH2 = innerDoc.querySelector('body section div h2')
+    let innertextPresentationP = innerDoc.querySelector('body section div p#presentation')
     let resumeAboutMe = innerDoc.querySelector('body section div a.resume')
-    let contactmePhone = innerDoc.querySelector('body section div h3.contactme')
+    let contactmePhone = innerDoc.querySelector('body section div h2.contactme')
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
     //setting my age
@@ -269,8 +271,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         innertextP.innerHTML = currentTranslate.descriptionABeastOutside
     }else if(whichGameContentIframeIs ==  "aboutme"){
         innertextWelcomeH1.innerHTML = currentTranslate.welcome
-        innertextPresentationH2.innerHTML = currentTranslate.aboutmedescriptionH2
-        innertextP.innerHTML = currentTranslate.aboutmedescriptionP
+        innertextPresentationP.innerHTML = currentTranslate.aboutmedescriptionP1
+        innertextP.innerHTML = currentTranslate.aboutmedescriptionP2
         contactmePhone.innerHTML = currentTranslate.contactme
         resumeAboutMe.innerHTML = currentTranslate.resume
 

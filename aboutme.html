@@ -19,7 +19,8 @@
    <style>
         *{
             /* background-color: rgb(175, 175, 175); */
-            background-color: rgb(38, 36, 44);
+            /* background-color: rgb(38, 36, 44); */
+            background-color: #99B0BF;
         }
         section{
             display: block;
@@ -32,27 +33,32 @@
                 font-size: 250%;
                 margin-bottom: 10px;
                 text-align: center;
-                color: rgb(255, 123, 0);
+                /* color: rgb(255, 123, 0); */
+                color: #0D171F;
                 text-decoration: underline;
-                text-decoration-color: white;
+                /* text-decoration-color: white; */
+                text-decoration-color:  #0D171F;
             }
-            h2{
+            p#presentation{
                 font-size: 200%;
                 margin-bottom: 10px;
                 text-align: center;
-                color: white;
+                /* color: white; */
+                color: #0D171F;
             }
-            h3{
-                color: rgb(0, 0, 0);
-                text-decoration: underline 2px rgb(0, 0, 0);
+            h2{
+                color: #0D171F;
+                text-decoration: underline 2px #0D171F;
                 font-size: 40px;
             }
-            p{
+            p#description{
                 font-size: 150%;
-                color: white;
+                /* color: white; */
+                color: #0D171F;
             }
             b span{
-                color: rgb(255, 123, 0);
+                /* color: rgb(255, 123, 0); */
+                color: #D16630;
             }
             div#space{
                 height: 300px;
@@ -90,7 +96,8 @@
                 color: black;
             } 
             div#resumecape{
-                background-color: rgb(0, 0, 0);
+                /* background-color: rgb(0, 0, 0); */
+                background-color: #0D171F;
                 width: 200px;
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -103,7 +110,8 @@
             }
             a.resume{
                 display: block;
-                background-color: rgb(0, 0, 0);
+                /* background-color: rgb(0, 0, 0);s */
+                background-color: #0D171F;
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 border-top-left-radius: 20%;
@@ -119,20 +127,27 @@
                 /* padding-top: 10px; */
             }
             i#phone{
-                color: rgb(3, 196, 3);
+                /* color: rgb(3, 196, 3); */
+                color: #428F42;
             }
             i#email{
                 color: rgb(255, 123, 0);
             }
             a.contactClick{
-                color: white;
+                /* color: white; */
+                color: #435D73;
                 text-decoration: none;
                 font-weight: lighter;
             }
             a.contactClick:hover{
-                color: rgb(255, 123, 0);
+                color: #D16630;;
                 text-decoration: none;
                 font-weight: bolder;
+            }
+            p.contacts{
+                font-size: 150%;
+                /* color: white; */
+                color: #0D171F;
             }
         }
         @media screen and (max-width: 1024px){
@@ -140,27 +155,28 @@
                 font-size: 250%;
                 margin-bottom: 10px;
                 text-align: center;
-                color: rgb(255, 123, 0);
+                color:  #0D171F;
                 text-decoration: underline;
-                text-decoration-color: white;
+                text-decoration-color: #0D171F;
             }
-            h2{
+            p#presentation{
                 font-size: 200%;
                 margin-bottom: 10px;
                 text-align: center;
-                color: white;
+                color: #0D171F;
             }
-            h3{
-                color: rgb(0, 0, 0);
-                text-decoration: underline 2px rgb(0, 0, 0);
+            h2{
+                color: #0D171F;
+                text-decoration: underline 2px #0D171F;
                 font-size: 40px;
             }
-            p{
+            p#description{
                 font-size: 150%;
-                color: white;
+                color: #0D171F;
             }
             b span{
-                color: rgb(255, 123, 0);
+                /* color: rgb(255, 123, 0); */
+                color:#D16630;
             }
             div#space{
                 height: 300px;
@@ -223,20 +239,27 @@
                 height: 500px;
             }
             i#phone{
-                color: rgb(3, 196, 3);
+                /* color: rgb(3, 196, 3); */
+                color: #235C44;
             }
             i#email{
                 color: rgb(255, 123, 0);
             }
             a.contactClick{
-                color: white;
+                /* color: white; */
+                color: #435D73;
                 text-decoration: none;
                 font-weight: lighter;
             }
             a.contactClick:hover{
-                color: rgb(255, 123, 0);
+                color: #D16630;
                 text-decoration: none;
                 font-weight: bolder;
+            }
+            p.contacts{
+                font-size: 150%;
+                /* color: white; */
+                color: #428F42;
             }
         }
     </style>
@@ -245,9 +268,12 @@
     <section>
         <div>
             <h1>Welcome to my Portfolio!</h1>
-            <h2>Hello! my name is <b><span>Jorge Mauadie!</span></b></h2>
-            <p> 
+            <p id="presentation">Hello! my name is <b><span>Jorge Mauadie!</span></b></p>
+            <!-- <p> 
                 &nbsp; &nbsp; &nbsp;I have <span id="age">3</span>  years old and I am a <b><span>Unity Developer</span></b> from Brazil. I started game development in January 2022 and I always seek to improve my knowledge in the area, being self-taught, studying and learning on my own in order to improve my development and programming skills.<br><br> &nbsp; &nbsp; &nbsp;I consider myself a person who is passionate about games, from the oldest games to the most current ones. I've been a very creative person since I was a child and I really like the idea of being able to create new interactive worlds and have this interaction between people and the digital world.<br><br> &nbsp; &nbsp; &nbsp;At the moment I have been learning how to develop multiplayer games using <b>Photon Pun</b> and <b>Mirror Networking</b>, and in the future I intend to start learning game development in <b>VR</b> and <b>AR</b> too. In September 2023 I started learning <b>Front-End</b> to build this portfolio and have my projects combined with my own identity." 
+            </p> -->
+            <p id="description">
+                &nbsp; &nbsp; &nbsp;Tenho <span id='age'>30</span> anos, sou <b><span>Desenvolvedor Unity</span></b> e moro na cidade de São João de Meriti - RJ. Iniciei no desenvolvimento de jogos em Janeiro de 2022 e busco sempre melhorar meus conhecimentos na área, sendo autodidata, estudando e aprendendo por conta própria a fim de melhorar minhas habilidades de desenvolvimento e programação.<br><br> &nbsp; &nbsp; &nbsp;teste<br><br> &nbsp; &nbsp; &nbsp;Me considero uma pessoa apaixonada por jogos, desde os jogos mais antigos até os mais atuais. Sou uma pessoa muito criativa desde criança e gosto muito da ideia de poder criar novos mundos interativos e ver essa interação entre pessoas e o mundo digital.<br><br> &nbsp; &nbsp; &nbsp;No momento tenho aprendido a desenvolver jogos multiplayer usando <b>Photon Pun</b> e <b>Mirror Networking</b>, e no futuro pretendo começar a aprender desenvolvimento de jogos em <b>VR</b> e <b>AR</b> também. Em Setembro de 2023 comecei a aprender <b>Front-End </b> com a intenção de construir esse portfólio e ter meus projetos reunidos com minha própria identidade.",
             </p>
         </div>
         <div id="experienceTec">
@@ -276,9 +302,9 @@
             </ul>
         </div>
         <div id="contactme">
-            <h3 class="contactme">Contact me:</h3>
+            <h2 class="contactme">Contact me:</h2>
             <p class="contacts"><i class="bi bi-envelope-at-fill" id="email"></i><a href="mailto:jorgemauadie@gmail.com" class="contactClick"> jorgemauadie@gmail.com</a></p>
-            <p><i class="bi bi-whatsapp" id="phone"></i><a href="https://wa.me/5521964575248" target="_blank" class="contactClick"> 55 21 96457-5248</p>  
+            <p class="contacts"><i class="bi bi-whatsapp" id="phone"></i><a href="https://wa.me/5521964575248" target="_blank" class="contactClick"> 55 21 96457-5248</p>  
             <div id="resumecape">
                 <a class="resume" id="resumeaboutme" href="Resume/Jorge Mauadie GameDev En.pdf" download="Jorge Mauadie Unity Developer">Download Resume</a>
             </div>   
