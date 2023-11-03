@@ -245,9 +245,10 @@ function Translation(languageSelected){
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
     let innertextP = innerDoc.querySelector('body section div p')
-    let innertextH1 = innerDoc.querySelector('body section div h1')
+    let innertextWelcomeH1 = innerDoc.querySelector('body section div h1')
+    let innertextPresentationH2 = innerDoc.querySelector('body section div h2')
     let resumeAboutMe = innerDoc.querySelector('body section div a.resume')
-    let contactmePhone = innerDoc.querySelector('body section div h2.contactme')
+    let contactmePhone = innerDoc.querySelector('body section div h3.contactme')
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
     //setting my age
@@ -267,7 +268,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     else if(whichGameContentIframeIs == "abeastoutside"){
         innertextP.innerHTML = currentTranslate.descriptionABeastOutside
     }else if(whichGameContentIframeIs ==  "aboutme"){
-        innertextH1.innerHTML = currentTranslate.aboutmedescriptionH1
+        innertextWelcomeH1.innerHTML = currentTranslate.welcome
+        innertextPresentationH2.innerHTML = currentTranslate.aboutmedescriptionH2
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
         contactmePhone.innerHTML = currentTranslate.contactme
         resumeAboutMe.innerHTML = currentTranslate.resume
