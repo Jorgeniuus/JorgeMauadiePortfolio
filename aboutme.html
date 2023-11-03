@@ -220,7 +220,7 @@
         <div>
             <h1>Hello! my name is <b><span>Jorge Mauadie!</span></b></h1>
             <p> 
-                &nbsp; &nbsp; &nbsp;I have 30 years old and I am a <b><span>Unity Developer</span></b> from Brazil. I started game development in January 2022 and I always seek to improve my knowledge in the area, being self-taught, studying and learning on my own in order to improve my development and programming skills.<br><br> &nbsp; &nbsp; &nbsp;I consider myself a person who is passionate about games, from the oldest games to the most current ones. I've been a very creative person since I was a child and I really like the idea of being able to create new interactive worlds and have this interaction between people and the digital world.<br><br> &nbsp; &nbsp; &nbsp;At the moment I have been learning how to develop multiplayer games using <b>Photon Pun</b> and <b>Mirror Networking</b>, and in the future I intend to start learning game development in <b>VR</b> and <b>AR</b> too. In September 2023 I started learning <b>Front-End</b> to build this portfolio and have my projects combined with my own identity." 
+                &nbsp; &nbsp; &nbsp;I have <span id="age">3</span>  years old and I am a <b><span>Unity Developer</span></b> from Brazil. I started game development in January 2022 and I always seek to improve my knowledge in the area, being self-taught, studying and learning on my own in order to improve my development and programming skills.<br><br> &nbsp; &nbsp; &nbsp;I consider myself a person who is passionate about games, from the oldest games to the most current ones. I've been a very creative person since I was a child and I really like the idea of being able to create new interactive worlds and have this interaction between people and the digital world.<br><br> &nbsp; &nbsp; &nbsp;At the moment I have been learning how to develop multiplayer games using <b>Photon Pun</b> and <b>Mirror Networking</b>, and in the future I intend to start learning game development in <b>VR</b> and <b>AR</b> too. In September 2023 I started learning <b>Front-End</b> to build this portfolio and have my projects combined with my own identity." 
             </p>
         </div>
         <div id="experienceTec">
@@ -258,5 +258,34 @@
         </div> 
         <div id="space"></div>
     </section>
+
+    <script>
+        const myDayBorn = new Date(1993, 10, 23)
+        let currentDate = new Date()
+        let currentDay = currentDate.getDay()
+        let currentMonth = currentDate.getMonth()
+        let currentYear = currentDate.getFullYear()
+
+        //MY CURRENT AGE
+        function ReturnsMyCurrentAge(){
+            let returnsAge;
+
+            let currentDate = new Date(currentYear, currentMonth+1, currentDay+1); 
+                
+            let monthsAgeDifference = (currentDate.getFullYear() - myDayBorn.getFullYear()) * 12;
+            monthsAgeDifference -= myDayBorn.getMonth();
+            monthsAgeDifference += currentDate.getMonth();
+            
+            let yearsAgeDiffecrence = Math.floor(monthsAgeDifference / 12);
+            monthsAgeDifference = monthsAgeDifference % 12;
+            
+            if(yearsAgeDiffecrence >= 1){
+                returnsAge = `${yearsAgeDiffecrence}`
+            }
+            return returnsAge
+        }
+        let setMyCurrentAge = document.querySelector('body section div p span#age')
+        setMyCurrentAge.innerHTML = ReturnsMyCurrentAge()
+    </script>
 </body>
 </html>

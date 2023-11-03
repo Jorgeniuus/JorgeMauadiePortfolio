@@ -5,6 +5,7 @@ let activeButtonsMenu = true
 
 const unityDeveloperTimeExperience = new Date(2022, 1, 1)
 const frontEndDeveloperTimeExperience = new Date(2023, 9, 28)
+const myDayBorn = new Date(1993, 10, 23)
 let currentDate = new Date()
 let currentDay = currentDate.getDay()
 let currentMonth = currentDate.getMonth()
@@ -102,8 +103,25 @@ function ResponsiveIframePageLoaded(){
         iframe.style.height = height + 'px';
     }
 }
+//MY CURRENT AGE
+function ReturnsMyCurrentAge(){
+    let returnsAge;
 
-//ANOS DE EXPERIÊNCIA
+    let currentDate = new Date(currentYear, currentMonth+1, currentDay+1); 
+        
+    let monthsAgeDifference = (currentDate.getFullYear() - myDayBorn.getFullYear()) * 12;
+    monthsAgeDifference -= myDayBorn.getMonth();
+    monthsAgeDifference += currentDate.getMonth();
+    
+    let yearsAgeDiffecrence = Math.floor(monthsAgeDifference / 12);
+    monthsAgeDifference = monthsAgeDifference % 12;
+    
+    if(yearsAgeDiffecrence >= 1){
+        returnsAge = `${yearsAgeDiffecrence}`
+    }
+    return returnsAge
+}
+//EXPERIENCE YEARS
 function TecnologiesTimeExperience(whichTecnologyIs){
     let returnExperienceUnity;
     let returnExperienceFront;
@@ -120,16 +138,16 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                returnExperienceUnity = `${yearsDifference} ${yearExp}`//ano de experiêcia` 
+                returnExperienceUnity = `${yearsDifference} ${yearExp}`
             }else {
-                returnExperienceUnity = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`//anos de experiêcia`
+                returnExperienceUnity = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`
             }  
         }else if(monthsDifference >= 1){
-            returnExperienceUnity = `${monthsDifference} ${monthExp}`//mês de experiêcia` 
+            returnExperienceUnity = `${monthsDifference} ${monthExp}`
         }else if(monthsDifference > 1){
-            returnExperienceUnity = `${monthsDifference} ${moreAMonthExp}`//meses de experiêcia` 
+            returnExperienceUnity = `${monthsDifference} ${moreAMonthExp}`
         }else {
-            returnExperienceUnity = `${lessAMonthExp}`//Menos de 1 mês de experiêcia`
+            returnExperienceUnity = `${lessAMonthExp}`
         }
         return returnExperienceUnity
     }else{
@@ -144,16 +162,16 @@ function TecnologiesTimeExperience(whichTecnologyIs){
         
         if(yearsDifference >= 1){
             if(monthsDifference == 0){
-                returnExperienceFront = `${yearsDifference} ${yearExp}`//ano de experiêcia` 
+                returnExperienceFront = `${yearsDifference} ${yearExp}`
             }else {
-                returnExperienceFront = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`//anos de experiêcia`
+                returnExperienceFront = `${yearsDifference}.${monthsDifference} ${yearMonthExp}`
             }  
         }else if(monthsDifference == 1){
-            returnExperienceFront = `${monthsDifference} ${monthExp}`//mês de experiêcia` 
+            returnExperienceFront = `${monthsDifference} ${monthExp}`
         }else if(monthsDifference > 1){
-            returnExperienceFront = `${monthsDifference} ${moreAMonthExp}`//meses de experiêcia` 
+            returnExperienceFront = `${monthsDifference} ${moreAMonthExp}`
         }else {
-            returnExperienceFront = `${lessAMonthExp}`//Menos de 1 mês de experiêcia`
+            returnExperienceFront = `${lessAMonthExp}`
         }
         return returnExperienceFront
     }
@@ -230,7 +248,6 @@ function Translation(languageSelected){
     moreAMonthExp = languageSelected.moreMonths
     lessAMonthExp = languageSelected.lessAMonth
     contactmeAboutFront.innerHTML = languageSelected.contactme
-
     currentTranslate = languageSelected
     setInterval(TranslateGameContentsInIframes, 3000);
 }
@@ -242,6 +259,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     let contactmePhone = innerDoc.querySelector('body section div h2.contactme')
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
+    //setting my age
+    let setMyCurrentAge = innerDoc.querySelector('body section div p span#age')
 
     innerDoc.onload = function() {
         const body = iframe.contentDocument.body;
@@ -261,6 +280,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         innertextP.innerHTML = currentTranslate.aboutmedescriptionP
         contactmePhone.innerHTML = currentTranslate.contactme
         resumeAboutMe.innerHTML = currentTranslate.resume
+
+        setMyCurrentAge.innerHTML = ReturnsMyCurrentAge()
 
         udityFrontDescription.forEach(tec =>{
             if(tec.getAttribute('data-value') == 'unity'){
