@@ -7,12 +7,10 @@ div#content{
     width: 90%;
     border-radius: 20%;
     padding-top: 10px;
-    /* background-color: green; */
 }
 .previewcontent{
     display: inline-block;
     width: 200px;
-    height: 250px;
     border-radius: 20%;
     margin: 20px;
     box-shadow: 10px 10px 5px black;
@@ -27,7 +25,6 @@ div#content{
 .previewcontent:hover{
     display: inline-block;
     width: 200px;
-    height: 250px;
     border-radius: 20%;
     margin: 20px;
     /* box-shadow: 8px 8px 8px rgb(0, 26, 255); */
@@ -39,6 +36,12 @@ div#content{
 .previewcontent h1{
     text-align: center;
     color: rgb(255, 123, 0);
+    margin: 5px;
+}
+.previewcontent p{
+    text-align: center;
+    color: #F1F4F7;
+    font-size: 13px;
     margin: 5px;
 }
 div#content i{

@@ -190,6 +190,10 @@ let resumeFront = document.querySelector('.resume');
 let contactmeAboutFront = document.querySelector('h2.contactme')
 //game descriptions
 let iframeContentGames = document.getElementById('iframeContentGame');
+//preview description
+let prevship = document.querySelector('p#prevship');
+let prevbeast = document.querySelector('p#prevbeast');
+let prevfps = document.querySelector('p#prevfps');
 
 let currentTranslate;
 let nameGameContentIframe;
@@ -241,6 +245,11 @@ function Translation(languageSelected){
     moreAMonthExp = languageSelected.moreMonths
     lessAMonthExp = languageSelected.lessAMonth
     contactmeAboutFront.innerHTML = languageSelected.contactme
+    //preview description
+    prevship.innerHTML = languageSelected.previewDescriptionShipDestroyer
+    prevbeast.innerHTML = languageSelected.previewDescriptionABeastOutside
+    prevfps.innerHTML = languageSelected.previewDescriptionFpsMultiplayer
+
     currentTranslate = languageSelected
     setInterval(TranslateGameContentsInIframes, 3000);
 }
@@ -254,7 +263,7 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     //tecnology descriptions
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
     //setting my age
-    let setMyCurrentAge = innerDoc.querySelector('body section div p span#age')
+    let setMyCurrentAge = innerDoc.querySelector('body section div p span#age')  
 
     innerDoc.onload = function() {
         const body = iframe.contentDocument.body;
