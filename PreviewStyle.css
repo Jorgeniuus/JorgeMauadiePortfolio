@@ -28,14 +28,15 @@ div#content{
     border-radius: 20%;
     margin: 20px;
     /* box-shadow: 8px 8px 8px rgb(0, 26, 255); */
-    box-shadow: 8px 8px 8px  rgb(255, 123, 0);
+    box-shadow: 8px 8px 8px  rgb(255, 123, 0); 
     background-color: rgb(38, 36, 44);
 
     transform: scale(1.1);
 }
 .previewcontent h1{
     text-align: center;
-    color: rgb(255, 123, 0);
+    /* color: rgb(255, 123, 0); */
+    color: #D16630;
     margin: 5px;
 }
 .previewcontent p{
@@ -53,7 +54,8 @@ div#content i{
 }
 div#content i:hover{
     display: block;
-    color: rgb(255, 123, 0);
+    /* color: rgb(255, 123, 0); */
+    color: #D16630;
     font-size: 20px;
     margin: 5px auto;
     width: 50px;

@@ -50,7 +50,8 @@ header{
         min-width: 90px;
         width: 150px;
         height: 720PX;
-        color: rgb(255, 123, 0);
+        /* color: rgb(255, 123, 0); */
+        color: #D16630;
         margin-right: 0.5%;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -89,7 +90,8 @@ header{
         /* height: 70px; */
         height: 100%;
         text-align: center;
-        color: rgb(255, 123, 0);
+        /* color: rgb(255, 123, 0); */
+        color: #D16630;
         display: inline-flex;
     }
     header nav div#projectsmenu ul{ 
@@ -150,7 +152,8 @@ header{
         border-bottom-right-radius: 30px;
     }
     #myname{
-        color: rgb(255, 123, 0);
+        /* color: rgb(255, 123, 0); */
+        color: #D16630;
         text-align: center;
         text-transform: uppercase;
         padding-top: 5%;
@@ -221,7 +224,8 @@ header{
         margin-top: 10px;
     }
     i#email{
-        color: rgb(255, 123, 0);
+        /* color: rgb(255, 123, 0); */
+        color: #D16630;
         text-decoration: none;
     }
     a.contactClick{
@@ -342,7 +346,8 @@ header{
         margin-top: 10px;
     }
     i#email{
-        color: rgb(255, 123, 0);
+        /* color: rgb(255, 123, 0); */
+        color: #D16630;
     }
     h2{
         color: #5E788C;

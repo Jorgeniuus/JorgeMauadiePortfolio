@@ -28,7 +28,7 @@ function MenuSelect(itemMenuSelected = 0, classContent = 'Home'){
     if (window.matchMedia("(max-width: 1024px)").matches) {
         for(let i = 0; i < buttonSelect.length; i++){ 
             if(i == itemMenuSelected){
-                buttonSelect[i].style.color =  'rgb(255, 123, 0)';
+                buttonSelect[i].style.color =  '#D16630';
                 buttonSelect[i].style.fontSize = '12px';
                 buttonSelect[i].style.transform = 'scale(1.5)';    
             }else{

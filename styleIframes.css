@@ -15,7 +15,8 @@ p#contenttext{
         border: 0;
         height: 80px;
         width: 2px;
-        background-color: #ff7b00;
+        /* background: #ff7b00; */
+        background: #D16630;
     }
     iframe{
         padding-left: 2.5%;
@@ -29,7 +30,8 @@ p#contenttext{
     .line hr{
         border: 0;
         height: 3px;
-        background: #ff7b00;
+        /* background: #ff7b00; */
+        background: #D16630;
     }
     iframe{
         padding-left: 2.5%;
