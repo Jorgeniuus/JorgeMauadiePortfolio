@@ -1,4 +1,4 @@
-let typeProjectsName = ['Home', 'Mobile', 'PC', 'Multiplayer', 'About Me',]
+let typeProjectsName = ['Home', 'Mobile', 'PC', 'Multiplayer', 'About Me', 'Freelances',]
 let typeTecnology = ['unity', 'frontend']
 let typeContentSelected = 'Home'
 let activeButtonsMenu = true
@@ -75,10 +75,11 @@ function SelectTypeContent(classContent){
                 ResponsiveIframePageLoaded()
             }
         }else{
-            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home')
-            for(let j = 0; j < hidePreviewContents.length; j++){
-                hidePreviewContents[j].style.display = 'none';
-           }
+            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home' ) { //|| typeProjectsName[i] === 'Freelances')
+                for(let j = 0; j < hidePreviewContents.length; j++){
+                    hidePreviewContents[j].style.display = 'none';
+                }
+            }
         }
     }
     typeContentSelected = classContent
@@ -194,6 +195,8 @@ let iframeContentGames = document.getElementById('iframeContentGame');
 let prevship = document.querySelector('p#prevship');
 let prevbeast = document.querySelector('p#prevbeast');
 let prevfps = document.querySelector('p#prevfps');
+//preview description freelance
+let prevevangelikids = document.querySelector('p#prevevangelikids');
 
 let currentTranslate;
 let nameGameContentIframe;
@@ -250,6 +253,9 @@ function Translation(languageSelected){
     prevbeast.innerHTML = languageSelected.previewDescriptionABeastOutside
     prevfps.innerHTML = languageSelected.previewDescriptionFpsMultiplayer
 
+    //preview description freelance
+    prevevangelikids.innerHTML = languageSelected.freelancePreviewDescriptionEvangelikids
+
     currentTranslate = languageSelected
     setInterval(TranslateGameContentsInIframes, 3000);
 }
@@ -264,6 +270,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
     let udityFrontDescription = innerDoc.querySelectorAll('body section div.barTec p'); 
     //setting my age
     let setMyCurrentAge = innerDoc.querySelector('body section div p span#age')  
+    //freelances
+    let frelanceEvangelikids = innerDoc.querySelector('div#freelancer p#freelancedescription')  
 
     innerDoc.onload = function() {
         const body = iframe.contentDocument.body;
@@ -296,5 +304,7 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         })
     }else if(whichGameContentIframeIs ==  "fpsmultiplayer"){
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
+    }else if(whichGameContentIframeIs ==  "evangelikids"){
+        frelanceEvangelikids.innerHTML = currentTranslate.freelanceDescriptionEvangelikids
     }
 }

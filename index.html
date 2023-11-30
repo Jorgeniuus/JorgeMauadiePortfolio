@@ -26,7 +26,7 @@
 
     <!--IT IS NOT READY YET-->
     <style>
-        p#prevnotreadyyet{
+        p.prevnotreadyyet{
             color: red;
         }
     </style>
@@ -55,7 +55,8 @@
                         <li class="itemmenu" id="mobile" onclick="MenuSelect(1, 'Mobile')">Mobile</li>
                         <li class="itemmenu" id="pc" onclick="MenuSelect(2, 'PC')">PC</li>
                         <li class="itemmenu" id="multiplayer" onclick="MenuSelect(3, 'Multiplayer')">Multiplayer</li>
-                        <li class="itemmenu" id="aboutme" onclick="MenuSelect(4, 'About Me'); TranslateGameContentsInIframes('aboutme', true)">About Me</li>
+                        <li class="itemmenu" id="freelances" onclick="MenuSelect(4, 'Freelances')">Freelances</li>
+                        <li class="itemmenu" id="aboutme" onclick="MenuSelect(5, 'About Me'); TranslateGameContentsInIframes('aboutme', true)">About Me</li>
 
                         <!-- <li class="TESTIMPLEMENT">Nothing Yet</li>
                         <li class="TESTIMPLEMENT">Nothing Yet</li> -->
@@ -92,13 +93,20 @@
                                 <img src="Imagens/Jogos/Nightmare Surviving Hacker/Profile Hacker.png" alt="Preview Project">
                                 <i class="bi bi-phone" title="Mobile Game"></i>
                                 <h1>Nightmare Survive Hacker</h1>
-                                <p id="prevnotreadyyet">It is not ready yet!</p>
+                                <p class="prevnotreadyyet">It is not ready yet!</p>
                             </div></a>
                             <a href="Game Pages/Punch Them All.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame()"><div class="previewcontent Home Mobile">
                                 <img src="Imagens/Jogos/Punch Them All/Profile Puncher.png" alt="Preview Project">
                                 <i class="bi bi-phone" title="Mobile Game"></i>
                                 <h1>Punch Them All</h1> <br>
-                                <p id="prevnotreadyyet">It is not ready yet!</p> 
+                                <p class="prevnotreadyyet">It is not ready yet!</p> 
+                            </div></a>
+
+                            <a href="Game Pages/Freelances/Evangelikids.html" target="iframeContentGame" onclick="OnClickPreviewToChangeToPageGame(); TranslateGameContentsInIframes('evangelikids', true)"><div class="previewcontent Freelances">
+                                <img src="Imagens/Jogos/Freelances/Evangelikids/ProfilePhotoEK.png" alt="Preview Project">
+                                <i class="bi bi-phone" title="Mobile App"></i>
+                                <h1>Evangelikids</h1> <br>
+                                <p id="prevevangelikids">It's a Bible application!</p> 
                             </div></a>
 
                             <iframe src="" name="iframeContentGame" id="iframeContentGame" frameborder="0" scrolling="no"></iframe> <br><br>                            
