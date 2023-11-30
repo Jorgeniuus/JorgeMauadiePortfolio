@@ -75,7 +75,7 @@ function SelectTypeContent(classContent){
                 ResponsiveIframePageLoaded()
             }
         }else{
-            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home' ) { //|| typeProjectsName[i] === 'Freelances')
+            if(typeProjectsName[i] !== classContent && typeProjectsName[i] === 'Home' || typeProjectsName[i] === 'Freelances'){
                 for(let j = 0; j < hidePreviewContents.length; j++){
                     hidePreviewContents[j].style.display = 'none';
                 }
