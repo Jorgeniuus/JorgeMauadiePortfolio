@@ -162,7 +162,10 @@ header{
         font-size: 200%; 
     }
     #profilephoto{
-        width: 300px;
+        width: 205px;
+        border-radius: 10%;
+        display: flex;
+        
     }
     header nav div#about ul li{
         color: #F1F4F7;
@@ -172,8 +175,9 @@ header{
     }
     header nav div#about ul#socialmedia {
         display: flex;
-        width: 50%;
+        width: 100%;
         text-align: center;
+        padding-right: 100px;
     }
     header nav div#about ul#socialmedia i{
         font-size: 35px;
@@ -278,6 +282,7 @@ header{
         display: block;
         width: 200px;
         margin: auto;
+        border-radius: 10%;
     }
     header nav div#about ul li{
         display:inline-block;
