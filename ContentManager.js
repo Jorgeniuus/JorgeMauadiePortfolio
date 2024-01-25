@@ -195,6 +195,7 @@ let iframeContentGames = document.getElementById('iframeContentGame');
 let prevship = document.querySelector('p#prevship');
 let prevbeast = document.querySelector('p#prevbeast');
 let prevfps = document.querySelector('p#prevfps');
+let prevdw = document.querySelector('p#prevdw');
 //preview description freelance
 let prevevangelikids = document.querySelector('p#prevevangelikids');
 
@@ -252,6 +253,7 @@ function Translation(languageSelected){
     prevship.innerHTML = languageSelected.previewDescriptionShipDestroyer
     prevbeast.innerHTML = languageSelected.previewDescriptionABeastOutside
     prevfps.innerHTML = languageSelected.previewDescriptionFpsMultiplayer
+    prevdw.innerHTML = languageSelected.previewDescriptionDestructionOnWheels
 
     //preview description freelance
     prevevangelikids.innerHTML = languageSelected.freelancePreviewDescriptionEvangelikids
@@ -261,7 +263,7 @@ function Translation(languageSelected){
 }
 function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameContentIframe){
     let innerDoc = iframeContentGames.contentDocument || iframeContentGames.contentWindow.document;
-    let innertextP = innerDoc.querySelector('body section div p#description')
+    let innertextP = innerDoc.querySelector('body section div p')
     let innertextWelcomeH1 = innerDoc.querySelector('body section div h1')
     let innertextPresentationP = innerDoc.querySelector('body section div p#presentation')
     let resumeAboutMe = innerDoc.querySelector('body section div a.resume')
@@ -304,6 +306,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         })
     }else if(whichGameContentIframeIs ==  "fpsmultiplayer"){
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
+    }else if(whichGameContentIframeIs ==  "destructiononwheels"){
+        innertextP.innerHTML = currentTranslate.descriptionDestructionOnWheels
     }else if(whichGameContentIframeIs ==  "evangelikids"){
         frelanceEvangelikids.innerHTML = currentTranslate.freelanceDescriptionEvangelikids
     }
