@@ -192,6 +192,7 @@ let contactmeAboutFront = document.querySelector('h2.contactme')
 //game descriptions
 let iframeContentGames = document.getElementById('iframeContentGame');
 //preview description
+let prevsafezone = document.querySelector('p#prevsafezone');
 let prevship = document.querySelector('p#prevship');
 let prevbeast = document.querySelector('p#prevbeast');
 let prevfps = document.querySelector('p#prevfps');
@@ -250,6 +251,7 @@ function Translation(languageSelected){
     lessAMonthExp = languageSelected.lessAMonth
     contactmeAboutFront.innerHTML = languageSelected.contactme
     //preview description
+    prevsafezone.innerHTML = languageSelected.previewDescriptionSafezone
     prevship.innerHTML = languageSelected.previewDescriptionShipDestroyer
     prevbeast.innerHTML = languageSelected.previewDescriptionABeastOutside
     prevfps.innerHTML = languageSelected.previewDescriptionFpsMultiplayer
@@ -308,6 +310,8 @@ function TranslateGameContentsInIframes(whichGameContentIframeIs = nameGameConte
         innertextP.innerHTML = currentTranslate.descriptionFPSMultiplayer
     }else if(whichGameContentIframeIs ==  "destructiononwheels"){
         innertextP.innerHTML = currentTranslate.descriptionDestructionOnWheels
+    }else if(whichGameContentIframeIs ==  "safezone"){
+        innertextP.innerHTML = currentTranslate.descriptionSafezone
     }else if(whichGameContentIframeIs ==  "evangelikids"){
         frelanceEvangelikids.innerHTML = currentTranslate.freelanceDescriptionEvangelikids
     }
